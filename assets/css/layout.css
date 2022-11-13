@@ -1,0 +1,21 @@
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-floating {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  text-align: right;
+  width: 80px;
+}
+.menu-floating .button-chatbot {
+  width: 80px;
+  height: 80px;
+  background: url(../images/icon_chatbot.png) no-repeat center center;
+  background-size: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}

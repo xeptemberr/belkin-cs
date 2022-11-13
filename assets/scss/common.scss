@@ -1,0 +1,37 @@
+@import '_variables.scss';
+
+.color-belkin {
+    color: $color-belkin;
+}
+.main-title {
+    @include main-title();
+}
+.title-subtext {
+    @include title-subtext();
+}
+.title-toptext {
+    @include title-category();
+}
+.a11y-text {
+    @include a11y-text(); 
+}
+.button-belkin {
+    @include button-round();
+    @include button-belkin();
+}
+.button-black {
+    @include button-round();
+    @include button-black();
+}
+.button-belkin-outline {
+    @include button-round();
+    @include button-belkin-outline();
+}
+.button-black-outline {
+    @include button-round();
+    @include button-black-outline();
+}
+.button-white-outline {
+    @include button-round();
+    @include button-white-outline();
+}
