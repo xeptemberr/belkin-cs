@@ -16,6 +16,11 @@ header#header {
         background: url(../images/logo-160x54.png) no-repeat center center;
         background-size: 100%;
     }
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
     .global-navigation {
         font-weight: bold;
         ul {
