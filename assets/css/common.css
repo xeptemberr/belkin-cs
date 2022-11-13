@@ -1,4 +1,9 @@
 /* color */
+/* media-query */
+/* title */
+/* button */
+/* color */
+/* media-query */
 /* title */
 /* button */
 .color-belkin {
@@ -10,16 +15,51 @@
   line-height: 1.2;
   font-weight: bold;
 }
+@media only screen and (max-width: 1280px) {
+  .main-title {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .main-title {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .main-title {
+    font-size: 24px;
+  }
+}
 
 .title-subtext {
   font-size: 24px;
   font-weight: normal;
+}
+@media only screen and (max-width: 1280px) {
+  .title-subtext {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .title-subtext {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .title-subtext {
+    font-size: 15px;
+  }
 }
 
 .title-toptext {
   font-size: 18px;
   font-weight: bold;
   color: #76D850;
+}
+@media only screen and (max-width: 520px) {
+  .title-toptext {
+    font-size: 14px;
+  }
 }
 
 .a11y-text {
@@ -36,6 +76,9 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -57,11 +100,27 @@
 .button-belkin:hover {
   opacity: 0.7;
 }
+@media only screen and (max-width: 800px) {
+  .button-belkin {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .button-belkin {
+    min-width: auto;
+    padding: 0 30px;
+    height: 50px;
+    font-size: 14px;
+  }
+}
 
 .button-black {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -83,11 +142,27 @@
 .button-black:hover {
   opacity: 0.7;
 }
+@media only screen and (max-width: 800px) {
+  .button-black {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .button-black {
+    min-width: auto;
+    padding: 0 30px;
+    height: 50px;
+    font-size: 14px;
+  }
+}
 
 .button-belkin-outline {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -108,6 +183,19 @@
 .button-belkin-outline:hover {
   opacity: 0.7;
 }
+@media only screen and (max-width: 800px) {
+  .button-belkin-outline {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .button-belkin-outline {
+    min-width: auto;
+    padding: 0 30px;
+    height: 50px;
+    font-size: 14px;
+  }
+}
 .button-belkin-outline:hover {
   background: #fff;
 }
@@ -116,6 +204,9 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -136,6 +227,19 @@
 .button-black-outline:hover {
   opacity: 0.7;
 }
+@media only screen and (max-width: 800px) {
+  .button-black-outline {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .button-black-outline {
+    min-width: auto;
+    padding: 0 30px;
+    height: 50px;
+    font-size: 14px;
+  }
+}
 .button-black-outline:hover {
   background: #fff;
 }
@@ -144,6 +248,9 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -164,4 +271,17 @@
 }
 .button-white-outline:hover {
   opacity: 0.7;
+}
+@media only screen and (max-width: 800px) {
+  .button-white-outline {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .button-white-outline {
+    min-width: auto;
+    padding: 0 30px;
+    height: 50px;
+    font-size: 14px;
+  }
 }

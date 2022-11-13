@@ -1,6 +1,19 @@
+/* color */
+/* media-query */
+/* title */
+/* button */
+/* color */
+/* media-query */
+/* title */
+/* button */
 #footer {
   background-color: #000;
-  padding: 70px;
+  padding: 70px 0;
+}
+@media only screen and (max-width: 800px) {
+  #footer {
+    padding: 40px 0;
+  }
 }
 #footer .inner {
   display: -webkit-box;
@@ -13,15 +26,38 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media only screen and (max-width: 800px) {
+  #footer .inner {
+    display: block;
+  }
+}
 #footer h6 {
   width: 160px;
   height: 54px;
   background: url(../images/logo_footer_160x54.png) no-repeat center center;
   background-size: 100%;
 }
+@media only screen and (max-width: 800px) {
+  #footer h6 {
+    width: 140px;
+    height: 34px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #footer .copyright-area {
+    width: 100%;
+    text-align: center;
+  }
+}
 #footer .text-copyright {
   color: #999;
   margin-top: 16px;
+}
+@media only screen and (max-width: 800px) {
+  #footer .text-copyright {
+    font-size: 14px;
+  }
 }
 #footer .sns-lists {
   margin-top: 52px;
@@ -35,12 +71,37 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
+@media only screen and (max-width: 800px) {
+  #footer .sns-lists {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 24px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #footer .sns-lists .sns-item {
+    width: 24px;
+  }
+}
 #footer .sns-lists .sns-item + .sns-item {
   margin-left: 40px;
+}
+@media only screen and (max-width: 800px) {
+  #footer .sns-lists .sns-item + .sns-item {
+    margin-left: 4%;
+  }
 }
 #footer .cs-center-area {
   color: #fff;
   text-align: right;
+}
+@media only screen and (max-width: 800px) {
+  #footer .cs-center-area {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+  }
 }
 #footer .cs-center-area dt {
   opacity: 0.7;
@@ -50,6 +111,11 @@
 #footer .cs-center-area dd {
   font-size: 48px;
   font-weight: 700;
+}
+@media only screen and (max-width: 800px) {
+  #footer .cs-center-area dd {
+    font-size: 32px;
+  }
 }
 #footer .cs-center-area .button-group {
   margin-top: 50px;

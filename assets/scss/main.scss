@@ -1,10 +1,13 @@
-@import '_variables.scss';
+@import '_mixin.scss';
 
 .main-contents {
     position: relative;
 }
 #mainSlider {
     height: 618px;
+    @include mobile-max {
+        height: 500px;   
+    }
     *:focus {
         outline: none !important;
     }
@@ -22,6 +25,12 @@
             transition-duration: 0.7s;
             transform: translate(0, 50px);
             opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include mobile-max {
+                margin-top: 30px;
+            }
         }
     }
     .main-title {
@@ -29,6 +38,9 @@
         transition-duration: 0.7s;
         transform: translate(0, 50px);
         opacity: 0;
+        @include desktop-min {
+            line-height: 1.3;
+        }
     }
     .title-subtext {
         margin-top: 50px;
@@ -60,6 +72,13 @@
     left: 50%;
     margin-left: -600px;
     bottom: 100px;
+    @include desktop-min {
+        left: inherit;
+        margin-left: 0;
+    }
+    @include mobile-max {
+        bottom: 32px;   
+    }
     .slider-arrows {
         position: relative;
         z-index: 1;
@@ -80,6 +99,9 @@
         text-align: center;
         left: 0;
         top: 4px;
+        @include desktop-min {
+            left: 4%;
+        }
         li {
             font-weight: bold;
             display: none;
@@ -99,6 +121,9 @@
     }
     .button-group {
         margin-top: 50px;
+        @include mobile-max {
+            margin-top: 30px;
+        }
     }
     &.flex {
         .inner {
@@ -109,12 +134,61 @@
     }
     &#productRegister {
         background: #f8f8f8;
+        &.flex .inner {
+            @include tablet-max {
+                display: block;
+            }
+        }
+        .title-area {
+            @include desktop-min {
+                width: 35%;
+            }
+            @include tablet-max {
+                width: 100%;
+                text-align: center;
+                .main-title {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
         .contents-area {
             width: 751px;
             background: url(../images/icon_register_step_arrow.png) no-repeat right center;
+            @include desktop-min {
+                width: 65%;
+            }
+            @include tablet-max {
+                width: 100%;
+                margin-top: 60px;
+                background-size: 80%;
+            }
+            @include tablet-min {
+                background-position: right top;
+                margin-top: 50px;
+            }
+            @include mobile-max {
+                background-position: right bottom;
+                padding-bottom: 100px;
+                background-size: 100%;
+            }
             .register-step {
-                font-size: 0;
-                margin: 0 -20px -30px 0;
+                @include tablet-max {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    gap: 20px;
+                    padding-right: 16%;
+                }
+                @include tablet-min {
+                    padding-right: 0;
+                    padding-top: 30px;
+                }
+                @include mobile-max {
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr 1fr;
+                }
                 .title-toptext {
                     font-size: 14px;
                     margin: 16px 0 8px 0;
@@ -135,29 +209,84 @@
                     background: #FEFEFE;
                     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
                     border-radius: 12px;
+                    @include tablet-max {
+                        margin: 0;
+                        display: block;
+                        width: 100%;
+                    }
                     .icon {
                         width: 48px;
                         img {
                             vertical-align: top;
                         }
                     }
+                    .txt {
+                        @include mobile-max {
+                            font-size: 13px;
+                        }
+                    }
                     &:nth-child(2){
                         margin-top: 40px;
+                        @include mobile-max {
+                            margin-top: 0;
+                        }
                     }
                     &:nth-child(3){
                         margin-top: 80px;
+                        @include mobile-max {
+                            margin-top: 0;
+                        }
                     }
                     &:nth-child(4){
                         margin-top: -80px;
+                        @include mobile-max {
+                            margin-top: 0;
+                        }
                     }
                     &:nth-child(5){
                         margin-top: -40px;
+                        @include mobile-max {
+                            margin-top: 0;
+                        }
                     }
                 }
             }
         }
     }
     &#productFaq {
+        &.flex {
+            .inner {
+                @include tablet-max {
+                    display: block;
+                }
+            }
+        }
+        .title-area {
+            @include desktop-min {
+                width: 30%;
+            }
+            @include tablet-max {
+                width: 100%;
+                text-align: center;
+                .main-title {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .contents-area {
+            @include desktop-min {
+                width: 70%;
+            }
+            @include tablet-max {
+                width: 100%;
+                margin-top: 60px;
+            }
+            @include tablet-min {
+                margin-top: 50px;
+            }
+        }
         .card-faq {
             margin-right: -90px;
             width: 925px;
@@ -165,6 +294,13 @@
             align-items: center;
             justify-content: space-between;
             word-break: keep-all;
+            @include desktop-min {
+                margin-right: 0;
+                width: 100%;
+            }
+            @include tablet-min {
+                display: block;                              
+            }
             .card-faq-item {
                 width: 295px;
                 height: 383px;
@@ -172,6 +308,19 @@
                 border-radius: 12px 12px 12px 40px;
                 padding: 32px;
                 box-sizing: border-box;
+                @include desktop-min {
+                    width: 32%;
+                }
+                @include tablet-min {
+                    width: 100%;
+                    height: auto;
+                    & + .card-faq-item {
+                        margin-top: 24px;
+                    }
+                }
+                @include mobile-max {
+                    padding: 24px;
+                }
                 .title-toptext {
                     font-size: 14px;
                     margin: 0 0 16px 0;
@@ -195,12 +344,42 @@
                     }
                     h5 {
                         font-size: 32px;
+                        word-break: break-word;
                         line-height: 1.1;
                         margin-bottom: 40px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        @include desktop-min {
+                            font-size: 26px;
+                            margin-bottom: 24px;
+                        }
+                        @include tablet-min {
+                            font-size: 20px;
+                        }
+                        @include mobile-max {
+                            font-size: 16px;
+                            margin-bottom: 8px;
+                        }
+                        @include mobile-min {
+                            font-size: 15px;
+                        }
                     }
                     p {
                         line-height: 24px;
                         color: #666;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 4;
+                        -webkit-box-orient: vertical;
+                        word-break: break-all;
+                        @include tablet-min {
+                            padding-right: 32px;
+                            -webkit-line-clamp: 2;
+                        }
                     }
                 }                
                 &:hover {
@@ -224,7 +403,12 @@
     &#productNotice {
         .title-area {
             text-align: center;
-            margin-bottom: 80px;
+        }
+        .contents-area {
+            margin-top: 80px;
+            @include tablet-min {
+                margin-top: 50px;
+            }
         }
         .button-group {
             text-align: center;
@@ -242,6 +426,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include tablet-max {
+            font-size: inherit;
+        }
         a {
             white-space: nowrap;
             overflow: hidden;

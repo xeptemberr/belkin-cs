@@ -1,3 +1,5 @@
+@import '_variables.scss';
+
 /* color */
 $color-belkin: #76D850;
 
@@ -6,7 +8,7 @@ $mobile-min: 360px;
 $mobile-max: 520px;
 $tablet-min: 800px;
 $tablet-max: 1024px;
-$desktop-min: 1200px;
+$desktop-min: 1280px;
 $desktop-max: 1920px;
 
 @mixin mobile-min {
@@ -50,15 +52,36 @@ $desktop-max: 1920px;
     font-size: 48px;
     line-height: 1.2;
     font-weight: bold;
+    @include desktop-min {
+        font-size: 40px;
+    }
+    @include tablet-min {
+        font-size: 32px;
+    }
+    @include mobile-max {
+        font-size: 24px;
+    }
 }
 @mixin title-subtext {
     font-size: 24px;
     font-weight: normal;
+    @include desktop-min {
+        font-size: 20px;
+    }
+    @include tablet-min {
+        font-size: 16px;
+    }
+    @include mobile-max {
+        font-size: 15px;
+    }
 }
 @mixin title-category {
     font-size: 18px;
     font-weight: bold;
     color: $color-belkin;
+    @include mobile-max {
+        font-size: 14px;   
+    }
 }
 @mixin a11y-text {
     text-indent: -9999px;
@@ -73,6 +96,7 @@ $desktop-max: 1920px;
 /* button */
 @mixin button-round {
     display: inline-flex;
+    justify-content: center;
     align-items: center;
     border-radius: 40px;
     font-size: 18px;
@@ -84,6 +108,15 @@ $desktop-max: 1920px;
     transition: all 0.3s;
     &:hover {
         opacity: 0.7;
+    }
+    @include tablet-min {
+        font-size: 16px;
+    }
+    @include mobile-max {
+        min-width: auto;
+        padding: 0 30px;
+        height: 50px;
+        font-size: 14px;
     }
 }
 @mixin button-belkin {

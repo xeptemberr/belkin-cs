@@ -1,6 +1,14 @@
+@import '_mixin.scss';
+
 .inner {
     width: 1200px;
     margin: 0 auto;
+}
+@include desktop-min {
+    .inner {
+        width: 100%;
+        padding: 0 4%;
+    }
 }
 .menu-floating {
     position: fixed;
