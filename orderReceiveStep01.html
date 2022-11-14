@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <title>Belkin</title>
+    </head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1>
+                    <a href="index.html"><span class="a11y-text">Belkin</span></a>
+                </h1>
+                <div class="global-navigation">
+                    <ul>
+                        <li>
+                            <a href="aboutIntro.html">한국벨킨 고객지원</a>
+                        </li>
+                        <li class="is-active">
+                            <a href="orderReceiveStep01.html">정품등록 접수</a>
+                        </li>
+                        <li>
+                            <a href="asReceive.html">온라인 AS 접수</a>
+                        </li>
+                        <li>
+                            <a href="boardFaqList.html">자주묻는질문</a>
+                        </li>
+                        <li>
+                            <a href="boardNoticeList.html">공지사항</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- 컨텐츠 영역 -->
+        <div id="container">
+            <div class="title-page">
+                <div class="inner">
+                    <h3 class="title-page-top">정품등록 접수</h3>
+                </div>
+            </div>
+            <div class="ui-sub-menu">
+                <div class="inner">
+                    <ul>
+                        <li class="is-active"><a href="orderReceiveStep01.html">정품등록 접수</a></li>
+                        <li><a href="orderReceiveCheck.html">정품등록 확인</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contents">                 
+                <div class="inner">
+                    <section class="contents-section flex align-items-flex-start justify-content-space-between order-receive-section">
+                        <div class="order-receive-item type-can">
+                            <h4 class="title-contents">정품등록 가능 제품</h4>
+                            <div class="img">
+                                <img src="assets/images/img_canRegister.png" alt="">
+                            </div>
+                            <p class="text-contents">
+                                <strong>정품 인증번호</strong>가 부착된 제품에 한해 정품등록이 <strong class="emphasis-warning">가능</strong>합니다.
+                            </p>
+                        </div>
+                        <div class="order-receive-item type-cant">
+                            <h4 class="title-contents">정품등록 불가 제품</h4>
+                            <div class="img">
+                                <img src="assets/images/img_hologram.png" alt="">
+                            </div>
+                            <p class="text-contents">
+                                <strong>홀로그램 스티커</strong>가 부착된 제품은 정품등록이 <strong class="emphasis-belkin">불가</strong>합니다.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="contents-section receive-agree-section">
+                        <h4 class="title-contents">정품등록 접수</h4>
+                        <p class="text-contents">
+                            <span class="text-paragraph">
+                                벨킨 제품을 구매해 주셔서 감사드립니다.
+                            </span>
+                        </p>
+                        <div class="agree-check">
+                            <div class="checkbox-wrapper-4">
+                                <input class="inp-cbx" id="ContentPlaceHolder1_chkASAgree" name="ctl00$ContentPlaceHolder1$chkASAgree" type="checkbox"/>
+                                <label class="cbx" for="ContentPlaceHolder1_chkASAgree">
+                                    <span>
+                                        <svg width="12px" height="10px">
+                                            <use xlink:href="#check-4"></use>
+                                        </svg>
+                                    </span>
+                                    <span>모든 내용을 읽었으며, 이후 진행되는 내용에 동의합니다.</span>
+                                </label>
+                                <svg class="inline-svg">
+                                    <symbol id="check-4" viewbox="0 0 12 10">
+                                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                    </symbol>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="button-group"><a href="orderReceiveStep02.html" class="button-belkin">온라인 A/S 접수</a></div>
+                    </section>
+                    <section class="contents-section receive-announcement">
+                        <div class="announcement-list">
+                            <h3 class="title-with-line">
+                                <span class="txt">정품등록 안내</span>
+                            </h3>
+                            <ul class="list-bullet">
+                                <li>정품등록은 한국 벨킨을 통해 한국 내 정식 유통된 제품에 한하여 가능합니다.</li>
+                                <li>정품등록은 제품 패키지에 정품 인증번호가 부착된 제품에 대해 최초 구매자에 한해 가능하며 <br>매장 등 대행 접수사의 경우 벨킨 고객센터 <strong>1544-1011</strong>로 문의 주시기 바랍니다.</li>
+                                <li>정품 등록은 입력하신 정보를 기반으로 즉시 등록되며, 구매 영수증이 미흡하거나(구매일자/상품명/판매처 누락 등) <br>제품과 영수증이 상이하거나, 불법 판매처 구매 제품 등 기타 사유로 A/S시 활용이 불가할 수 있음을 유의 부탁드립니다.</li>
+                                <li>정품 인증번호가 부착된 제품을 구매하신 경우에도, 추후 원활한 A/S를 위해 구매내역(영수증)을 꼭 보관해 주시기 바랍니다.</li>
+                            </ul>
+                        </div>
+                        <div class="announcement-list">
+                            <h3 class="title-with-line">
+                                <span class="txt">정품등록 전 필요항목</span>
+                            </h3>
+                            <ul class="list-bullet">
+                                <li>
+                                    정품 등록을 위해서는 다음 항목이 준비될 수 있도록 해주시기 바랍니다.
+                                    <ul class="number-bullet">
+                                        <li><span class="number">1. </span>정품 인증번호가 부착된 제품 박스 사진</li>
+                                        <li><span class="number">2. </span>영수증 사진 혹은 온라인 구매내역 캡처본</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="announcement-list">
+                            <h3 class="title-with-line">
+                                <span class="txt">홀로그램 스티커 안내</span>
+                            </h3>
+                            <ul class="list-bullet">
+                                <li>홀로그램 스티커 제품을 구매하신 경우, 추후 A/S를 위해 홀로그램 스티커와 구매내역(영수증)을 반드시 보관해 주십시오.</li>
+                            </ul>
+                        </div>
+                        <div class="announcement-list">
+                            <h3 class="title-with-line">
+                                <span class="txt">A/S 안내</span>
+                            </h3>
+                            <ul class="list-bullet">
+                                <li>정품으로 등록하신 제품은 추후 벨킨 고객지원 홈페이지를 통해서 A/S를 받으실 수 있습니다.</li>
+                                <li>제품의 A/S는 제품별 책정된 보증기간내 파손 등 사용자 과실이 아닌 제품의 자연적인 고장에 한해 가능하며, <br>보증기간은 제품 박스 및 온라인 상품 페이지에 표기되어 있습니다.</li>
+                            </ul>
+                        </div>
+                        <div class="announcement-list">
+                            <h3 class="title-with-line">
+                                <span class="txt">기타 안내</span>
+                            </h3>
+                            <ul class="list-bullet">
+                                <li>구매내역 등록시 정보 부족 및 고객 착오로 인한 오류가 있을 수 있으므로, 추후 A/S를 위해 제품의 구매내역 및 <br>영수증 등은 반드시 보관하여 두시기 바랍니다.</li>
+                                <li>정품등록을 위해 입력하신 개인정보는 품질 보증기간을 고려하여 최대 5년동안 보관되며, 이후 파기됩니다.</li>
+                                <li>정품 인증번호는 고유 번호로 위/변조 등록시 민,형사상 책임을 물을 수 있습니다.</li>
+                                <li>애플 온라인 스토어 및 애플 스토어(가로수길, 여의도 등 매장)에서 구매하신 경우에는 정품등록이 가능하지 않으며, <br>A/S 필요시에는 구매 영수증을 지참하여 벨킨 고객센터 <strong>1544-1011</strong>로 문의 주시기 바랍니다.</li>
+                                <li>해외병행, 직구, 불법 유통 제품 등 한국 벨킨 정식 유통 제품 외에는 정품 등록 및 A/S가 불가합니다.</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- // 컨텐츠 영역 -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="copyright-area">
+                    <h6>
+                        <span class="a11y-text">Belkin</span>
+                    </h6>
+                    <p class="text-copyright">2017 Belkin of Korea Co.Ltd. All Right Reserved</p>
+                    <div class="sns-lists">
+                        <div class="sns-item">
+                            <a href="#">
+                                <img src="assets/images/icon_naver.png" alt="Naver" width="36" />
+                            </a>
+                        </div>
+                        <div class="sns-item">
+                            <a href="#">
+                                <img src="assets/images/icon_instagram.png" alt="Naver" width="40" />
+                            </a>
+                        </div>
+                        <div class="sns-item">
+                            <a href="#">
+                                <img src="assets/images/icon_facebook.png" alt="Naver" width="40" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-center-area">
+                    <dl>
+                        <dt>벨킨 공식 서비스센터</dt>
+                        <dd>1544-1011</dd>
+                    </dl>
+                    <div class="button-group">
+                        <button type="button" class="button-white-outline">벨킨 공식 홈페이지 바로가기</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -2,10 +2,19 @@
 /* media-query */
 /* title */
 /* button */
-/* color */
-/* media-query */
-/* title */
-/* button */
+/* form elements */
+@-webkit-keyframes wave-4 {
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+@keyframes wave-4 {
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
 * {
   font-family: "Noto Sans KR", "Sans-serif";
   -webkit-box-sizing: border-box;

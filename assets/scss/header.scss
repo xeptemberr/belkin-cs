@@ -36,6 +36,11 @@ header#header {
                 a:hover {
                     color: $color-belkin; 
                 }
+                &.is-active {
+                    a {
+                        color: $color-belkin;
+                    }
+                }
             }
         }
     }

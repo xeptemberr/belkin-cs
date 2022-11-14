@@ -12,6 +12,27 @@
 .title-toptext {
     @include title-category();
 }
+.title-page-top {
+    @include title-page();
+}
+.title-contents {
+    @include title-contents();
+}
+.title-with-line {
+    @include title-with-line()
+}
+.text-contents {
+    @include text-contents();
+}
+.text-paragraph {
+    @include text-paragraph();
+}
+.list-bullet {
+    @include list-bullet();
+}
+.number-bullet {
+    @include number-bullet();
+}
 .a11y-text {
     @include a11y-text(); 
 }
@@ -34,4 +55,72 @@
 .button-white-outline {
     @include button-round();
     @include button-white-outline();
+}
+.checkbox-wrapper-4 {
+    @include input-checkbox();
+}
+.search-input {
+    .search-label {
+        @include search-label();
+    }
+    .input {
+        @include input();
+    }
+}
+.emphasis-belkin {
+    color: $color-belkin;
+}
+.emphasis-warning {
+    color: #F94848;
+}
+.pagination {
+    text-align: center;
+    font-size: 0;
+    margin-top: 60px;
+    button {
+        width: 48px;
+        height: 48px;
+        vertical-align: top;
+        font-size: inherit;
+        font-size: 20px;
+        margin: 0 6px;
+        background: #FFFFFF;
+        border: 1px solid #F4F4F4;
+        border-radius: 4px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 24px;
+        @include tablet-max {
+            font-size: 16px;
+        }
+        @include tablet-min {
+            width: 38px;
+            height: 38px;
+            background-size: 18px;
+        }
+        @include mobile-max {
+            margin: 0 2px;
+            width: 30px;
+            height: 30px;
+            font-size: 14px;
+            background-size: 15px;
+            padding: 0;
+        }
+        &.is-active {
+            background: #000;
+            color: #fff;
+        }
+        &.pagination-first {
+            background-image: url('../images/icon_pagination_first.png');
+        }
+        &.pagination-prev {
+            background-image: url('../images/icon_pagination_next.png');
+        }
+        &.pagination-next {
+            background-image: url('../images/icon_pagination_next.png');
+        }
+        &.pagination-last {
+            background-image: url('../images/icon_pagination_last.png');
+        }
+    }
 }

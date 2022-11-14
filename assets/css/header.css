@@ -2,10 +2,19 @@
 /* media-query */
 /* title */
 /* button */
-/* color */
-/* media-query */
-/* title */
-/* button */
+/* form elements */
+@-webkit-keyframes wave-4 {
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+@keyframes wave-4 {
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
 header#header {
   height: 102px;
   background: #fff;
@@ -57,5 +66,8 @@ header#header .global-navigation ul li a {
   transition: color 0.2s;
 }
 header#header .global-navigation ul li a:hover {
+  color: #76D850;
+}
+header#header .global-navigation ul li.is-active a {
   color: #76D850;
 }

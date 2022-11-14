@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <title>Belkin</title>
+    </head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1>
+                    <a href="index.html"><span class="a11y-text">Belkin</span></a>
+                </h1>
+                <div class="global-navigation">
+                    <ul>
+                        <li>
+                            <a href="aboutIntro.html">한국벨킨 고객지원</a>
+                        </li>
+                        <li class="is-active">
+                            <a href="orderReceiveStep01.html">정품등록 접수</a>
+                        </li>
+                        <li>
+                            <a href="asReceive.html">온라인 AS 접수</a>
+                        </li>
+                        <li>
+                            <a href="boardFaqList.html">자주묻는질문</a>
+                        </li>
+                        <li>
+                            <a href="boardNoticeList.html">공지사항</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- 컨텐츠 영역 -->
+        <div id="container">
+            <div class="title-page">
+                <div class="inner">
+                    <h3 class="title-page-top">정품등록 확인</h3>
+                </div>
+            </div>
+            <div class="ui-sub-menu">
+                <div class="inner">
+                    <ul>
+                        <li><a href="orderReceiveStep01.html">정품등록 접수</a></li>
+                        <li class="is-active"><a href="orderReceiveLists.html">정품등록 확인</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contents">                 
+                <div class="inner">
+                    <section class="contents-section">
+                        <h4 class="title-contents">정품등록 확인</h4>
+                        <p class="text-contents">
+                            <span class="text-paragraph">
+                                최근 30일 이내의 접수내역을 확인하실 수 있으며 그 이전의 접수내역은 조회 불가능합니다.
+                            </span>
+                        </p>
+                        <div class="search-container">
+                            <div class="search-input">
+                                <label for="ContentPlaceHolder1_tbxName">이름</label>
+                                <input name="ctl00$ContentPlaceHolder1$tbxName" type="text" id="ContentPlaceHolder1_tbxName" class="input" onkeypress="if(event.keyCode == 13) {return false;}" placeholder="이름을 입력해주세요." />
+                            </div>
+                            <div class="search-input">
+                                <label for="ContentPlaceHolder1_tbxTel">핸드폰번호</label>
+                                <input name="ctl00$ContentPlaceHolder1$tbxTel" type="text" id="ContentPlaceHolder1_tbxTel" class="input" onkeypress="if(event.keyCode == 13) {return false;}" placeholder="핸드폰번호를 입력해주세요. (000-1234-5678)" />
+                            </div>
+                            <div class="search-input">
+                                <label for="ContentPlaceHolder1_tbxConfirmNo">비밀번호</label>
+                                <input name="ctl00$ContentPlaceHolder1$tbxConfirmNo" type="password" maxlength="10" id="ContentPlaceHolder1_tbxConfirmNo" class="input" onkeypress="if(event.keyCode == 13) {__doPostBack('ctl00$ContentPlaceHolder1$ibtnSearch',''); return false;}" placeholder="비밀번호를 입력해주세요." />
+                            </div>
+                            <div class="search-button">
+                                <button type="submit" name="ctl00$ContentPlaceHolder1$ibtnSearch" id="ContentPlaceHolder1_ibtnSearch">검색</button>
+                            </div>
+                        </div>
+                        <div class="board-lists">
+                            <div class="board-header">
+                                <div class="list-item list-number">번호</div>
+                                <div class="list-item list-subject">제목</div>
+                                <div class="list-item list-writer">작성자</div>
+                                <div class="list-item list-date">작성일</div>
+                            </div>
+                            <div class="board-body">
+                                <!-- 반복문 아이템 -->
+                                <div class="board-item">
+                                    <div class="list-item list-number">10</div>
+                                    <div class="list-item list-subject">
+                                        <a href="#">
+                                            제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 
+                                        </a>
+                                    </div>
+                                    <div class="list-item list-writer">username</div>
+                                    <div class="list-item list-date">2022.11.14</div>
+                                </div>
+                                <!-- // 반복문 아이템 -->
+                                <!-- 반복문 아이템 -->
+                                <div class="board-item">
+                                    <div class="list-item list-number">10</div>
+                                    <div class="list-item list-subject">
+                                        <a href="#">
+                                            제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요.  
+                                        </a>
+                                    </div>
+                                    <div class="list-item list-writer">username</div>
+                                    <div class="list-item list-date">2022.11.14</div>
+                                </div>
+                                <!-- // 반복문 아이템 -->
+                                <!-- 반복문 아이템 -->
+                                <div class="board-item">
+                                    <div class="list-item list-number">10</div>
+                                    <div class="list-item list-subject">
+                                        <a href="#">
+                                            제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 
+                                        </a>
+                                    </div>
+                                    <div class="list-item list-writer">username</div>
+                                    <div class="list-item list-date">2022.11.14</div>
+                                </div>
+                                <!-- // 반복문 아이템 -->
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <button type="button" name="ctl00$ContentPlaceHolder1$lbtnFirst" id="ContentPlaceHolder1_lbtnFirst" class="pagination-first">
+                                <span class="a11y-text">처음 페이지</span>
+                            </button>
+                            <button type="button" name="ctl00$ContentPlaceHolder1$lbtnPrevious" id="ContentPlaceHolder1_lbtnPrevious"  class="pagination-prev">
+                                <span class="a11y-text">이전 페이지</span>
+                            </button>
+                            <button type="button" class="is-active">1</button>
+                            <button type="button">2</button>
+                            <button type="button">3</button>
+                            <button type="button">4</button>
+                            <button type="button">5</button>
+                            <button type="button" name="ctl00$ContentPlaceHolder1$lbtnNext" id="ContentPlaceHolder1_lbtnNext"  class="pagination-next">
+                                <span class="a11y-text">다음 페이지</span>
+                            </button>
+                            <button type="button" name="ctl00$ContentPlaceHolder1$lbtnLast" id="ContentPlaceHolder1_lbtnLast"  class="pagination-last">
+                                <span class="a11y-text">마지막 페이지</span>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdMenuName" id="ContentPlaceHolder1_hdMenuName" value="정품등록접수">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdSubMenuName" id="ContentPlaceHolder1_hdSubMenuName" value="정품등록 확인">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdSubPage" id="ContentPlaceHolder1_hdSubPage" value="OrderRequestReceipt">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdCustomerNo" id="ContentPlaceHolder1_hdCustomerNo">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdConfirmNo" id="ContentPlaceHolder1_hdConfirmNo">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdCheckConfirm" id="ContentPlaceHolder1_hdCheckConfirm">
+            </div>
+        </div>
+        <!-- // 컨텐츠 영역 -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="copyright-area">
+                    <h6>
+                        <span class="a11y-text">Belkin</span>
+                    </h6>
+                    <p class="text-copyright">2017 Belkin of Korea Co.Ltd. All Right Reserved</p>
+                    <div class="sns-lists">
+                        <div class="sns-item">
+                            <a href="#">
+                                <img src="assets/images/icon_naver.png" alt="Naver" width="36" />
+                            </a>
+                        </div>
+                        <div class="sns-item">
+                            <a href="#">
+                                <img src="assets/images/icon_instagram.png" alt="Naver" width="40" />
+                            </a>
+                        </div>
+                        <div class="sns-item">
+                            <a href="#">
+                                <img src="assets/images/icon_facebook.png" alt="Naver" width="40" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-center-area">
+                    <dl>
+                        <dt>벨킨 공식 서비스센터</dt>
+                        <dd>1544-1011</dd>
+                    </dl>
+                    <div class="button-group">
+                        <button type="button" class="button-white-outline">벨킨 공식 홈페이지 바로가기</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

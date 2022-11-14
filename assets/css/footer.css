@@ -2,13 +2,23 @@
 /* media-query */
 /* title */
 /* button */
-/* color */
-/* media-query */
-/* title */
-/* button */
+/* form elements */
+@-webkit-keyframes wave-4 {
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+@keyframes wave-4 {
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
 #footer {
   background-color: #000;
   padding: 70px 0;
+  margin-top: 120px;
 }
 @media only screen and (max-width: 800px) {
   #footer {

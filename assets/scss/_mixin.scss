@@ -1,16 +1,5 @@
 @import '_variables.scss';
 
-/* color */
-$color-belkin: #76D850;
-
-/* media-query */
-$mobile-min: 360px;
-$mobile-max: 520px;
-$tablet-min: 800px;
-$tablet-max: 1024px;
-$desktop-min: 1280px;
-$desktop-max: 1920px;
-
 @mixin mobile-min {
     @media only screen and (max-width: #{$mobile-min}) {
         @content;
@@ -80,7 +69,135 @@ $desktop-max: 1920px;
     font-weight: bold;
     color: $color-belkin;
     @include mobile-max {
-        font-size: 14px;   
+        font-size: 14px;
+    }
+}
+@mixin title-page {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    @include desktop-min {
+        font-size: 28px;
+    }
+    @include tablet-min {
+        font-size: 24px;
+    }
+    @include mobile-max {
+        font-size: 20px;
+    }
+}
+@mixin text-contents {
+    font-size: 20px;
+    line-height: 1.6;
+    @include tablet-max {
+        font-size: 16px;
+    }
+    @include mobile-max {
+        font-size: 14px;
+    }
+}
+@mixin text-paragraph {
+    display: block;
+    font-size: inherit;
+    & + .text-paragraph {
+        margin-top: 24px;
+    }
+}
+@mixin title-contents {
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: $color-belkin;
+    @include desktop-min {
+        font-size: 20px;
+    }
+    @include tablet-min {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+}
+@mixin title-with-line {
+    position: relative;
+    margin-bottom: 20px;
+    .txt {
+        display: inline-block;
+        background: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        padding-right: 40px;
+        @include tablet-max {
+            font-size: 18px;
+        }
+        @include tablet-min {
+            font-size: 16px;
+            padding-right: 20px;
+        }
+    }
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: $color-belkin;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -1px;
+    }
+}
+@mixin list-bullet {
+    li {
+        @include text-contents();
+        position: relative;
+        padding-left: 22px;
+        line-height: 1.8;
+        @include tablet-max {
+            padding-left: 16px;
+        }
+        @include mobile-max {
+            padding-left: 10px;
+        }
+        & + li {
+            margin-top: 8px;
+        }
+        &::before {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            background: $color-belkin;
+            position: absolute;
+            left: 0;
+            top: 16px;
+            @include tablet-max {
+                top: 13px;
+                width: 4px;
+                height: 4px;
+            }
+            @include mobile-max {
+                top: 10px;
+            }
+        }
+    }
+}
+@mixin number-bullet {
+    li {
+        @include text-contents();
+        position: relative;
+        padding-left: 22px;
+        line-height: 1.8;
+        & + li {
+            margin-top: 4px;
+        }
+        &::before {
+            display: none;
+        }
+        .number {
+            position: absolute;
+            left: 0;
+        }
     }
 }
 @mixin a11y-text {
@@ -121,13 +238,13 @@ $desktop-max: 1920px;
 }
 @mixin button-belkin {
     font-weight: bold;
-    background:  $color-belkin;
+    background: $color-belkin;
     border: 2px solid $color-belkin;
     color: #fff;
 }
 @mixin button-black {
     font-weight: bold;
-    background:  #000;
+    background: #000;
     border: 2px solid #000;
     color: #fff;
 }
@@ -152,4 +269,149 @@ $desktop-max: 1920px;
     border: 2px solid #fff;
     color: #fff;
     opacity: 0.8;
+}
+
+/* form elements */
+@mixin search-label {
+    font-size: 16px;
+    display: block;
+    @include tablet-min {
+        font-size: 15px;
+    }
+    @include mobile-max {
+        font-size: 14px;
+    }
+}
+@mixin input {
+    border: 1px solid #EBEBEB;
+    border-radius: 12px;
+    background: #fff;
+    height: 60px;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    @include mobile-max {
+        height: 48px;
+    }
+    &::-webkit-input-placeholder,
+    &::placeholder, 
+    &::-ms-input-placeholder,
+    &::-moz-placeholder {
+        color: #cacaca;
+        @include tablet-min {
+            font-size: 15px;
+        }
+        @include mobile-max {
+            font-size: 13px;
+        }
+    }
+    &:focus {
+        outline: 0;
+        border-color: $color-belkin;
+    }
+}
+@mixin input-checkbox {
+    * {
+        box-sizing: border-box;
+    }
+    .cbx {
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        padding: 6px 8px 6px 0;
+        border-radius: 6px;
+        overflow: hidden;
+        transition: all 0.2s ease;
+        display: inline-block;
+        @include mobile-max {
+            width: 100%;
+            display: inline-block;
+        }
+        &:not(:last-child) {
+            margin-right: 6px;
+        }
+        &:hover {
+            background: rgba(0, 255, 42, 0.06);
+            span {
+                &:first-child {
+                    border-color: $color-belkin;
+                }
+            }
+        }
+        span {
+            float: left;
+            vertical-align: middle;
+            transform: translate3d(0, 0, 0);
+            &:first-child {
+                position: relative;
+                width: 18px;
+                height: 18px;
+                border-radius: 4px;
+                transform: scale(1);
+                border: 1px solid $color-belkin;
+                transition: all 0.2s ease;
+                box-shadow: 0 1px 1px rgba(0, 75, 0, 0.05);
+                svg {
+                    position: absolute;
+                    top: 3px;
+                    left: 2px;
+                    fill: none;
+                    stroke: #fff;
+                    stroke-width: 2;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-dasharray: 16px;
+                    stroke-dashoffset: 16px;
+                    transition: all 0.3s ease;
+                    transition-delay: 0.1s;
+                    transform: translate3d(0, 0, 0);
+                }
+            }
+            &:last-child {
+                padding-left: 8px;
+                line-height: 18px;
+            }
+        }
+    }
+    .inp-cbx {
+        position: absolute;
+        visibility: hidden;
+        &:checked {
+            + .cbx span:first-child {
+                background: $color-belkin;
+                border-color: $color-belkin;
+                animation: wave-4 0.4s ease;
+                svg {
+                    stroke-dashoffset: 0;
+                }
+            }
+        }
+    }
+    .inline-svg {
+        position: absolute;
+        width: 0;
+        height: 0;
+        pointer-events: none;
+        user-select: none;
+    }
+}
+@-moz-keyframes wave-4 {
+    50% {
+        transform: scale(0.9);
+    }
+}
+@-webkit-keyframes wave-4 {
+    50% {
+        transform: scale(0.9);
+    }
+}
+@-o-keyframes wave-4 {
+    50% {
+        transform: scale(0.9);
+    }
+}
+@keyframes wave-4 {
+    50% {
+        transform: scale(0.9);
+    }
 }

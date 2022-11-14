@@ -2,16 +2,25 @@
 /* media-query */
 /* title */
 /* button */
-/* color */
-/* media-query */
-/* title */
-/* button */
+/* form elements */
+@-webkit-keyframes wave-4 {
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+@keyframes wave-4 {
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
 .inner {
   width: 1200px;
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1200px) {
   .inner {
     width: 100%;
     padding: 0 4%;
@@ -24,6 +33,12 @@
   text-align: right;
   width: 80px;
 }
+@media only screen and (max-width: 1024px) {
+  .menu-floating {
+    right: 4%;
+    bottom: 2%;
+  }
+}
 .menu-floating .button-chatbot {
   width: 80px;
   height: 80px;
@@ -32,4 +47,10 @@
   border-radius: 100%;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (max-width: 520px) {
+  .menu-floating .button-chatbot {
+    width: 60px;
+    height: 60px;
+  }
 }
