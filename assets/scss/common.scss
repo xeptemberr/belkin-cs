@@ -63,9 +63,12 @@
     .search-label {
         @include search-label();
     }
-    .input {
-        @include input();
-    }
+}
+.input[type=text], .input[type=password], .input[type=number] {
+    @include input();
+}
+select {
+    @include select-box();
 }
 .emphasis-belkin {
     color: $color-belkin;
@@ -122,5 +125,14 @@
         &.pagination-last {
             background-image: url('../images/icon_pagination_last.png');
         }
+    }
+}
+.process-waiting {
+    opacity: 0.6;
+}
+.process-complete {
+    @include mobile-max {
+        color: $color-belkin;
+        opacity: 1;
     }
 }

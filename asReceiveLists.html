@@ -24,10 +24,10 @@
                         <li>
                             <a href="aboutIntro.html">한국벨킨 고객지원</a>
                         </li>
-                        <li class="is-active">
+                        <li>
                             <a href="orderReceiveStep01.html">정품등록 접수</a>
                         </li>
-                        <li>
+                        <li class="is-active">
                             <a href="asReceiveProductGuide.html">온라인 AS 접수</a>
                         </li>
                         <li>
@@ -44,21 +44,22 @@
         <div id="container">
             <div class="title-page">
                 <div class="inner">
-                    <h3 class="title-page-top">정품등록 확인</h3>
+                    <h3 class="title-page-top">AS 접수내역 확인</h3>
                 </div>
             </div>
             <div class="ui-sub-menu">
                 <div class="inner">
                     <ul>
-                        <li><a href="orderReceiveStep01.html">정품등록 접수</a></li>
-                        <li class="is-active"><a href="orderReceiveLists.html">정품등록 확인</a></li>
+                        <li><a href="asReceiveProductGuide.html">온라인 AS 접수 가능 제품 안내</a></li>
+                        <li><a href="asReceiveStep01.html">온라인 AS 접수</a></li>
+                        <li class="is-active"><a href="asReceiveLists.html">AS 접수내역 확인</a></li>
                     </ul>
                 </div>
             </div>
             <div id="contents">                 
                 <div class="inner">
                     <section class="contents-section">
-                        <h4 class="title-contents">정품등록 확인</h4>
+                        <h4 class="title-contents">AS 접수내역 확인</h4>
                         <p class="text-contents">
                             <span class="text-paragraph">
                                 최근 30일 이내의 접수내역을 확인하실 수 있으며 그 이전의 접수내역은 조회 불가능합니다.
@@ -67,7 +68,7 @@
                         <div class="search-container">
                             <div class="search-input">
                                 <label for="ContentPlaceHolder1_tbxName">이름</label>
-                                <input name="ctl00$ContentPlaceHolder1$tbxName" type="text" id="ContentPlaceHolder1_tbxName" class="input" onkeypress="if(event.keyCode == 13) {return false;}" placeholder="이름을 입력해주세요." />
+                                <input name="ctl00$ContentPlaceHolder1$tbxName" type="text" id="ContentPlaceHolder1_tbxName" class="input" onkeypress="if(event.keyCode == 13) {return false;}"  placeholder="이름을 입력해주세요.">
                             </div>
                             <div class="search-input">
                                 <label for="ContentPlaceHolder1_tbxTel">핸드폰번호</label>
@@ -87,6 +88,7 @@
                                 <div class="list-item list-subject">제목</div>
                                 <div class="list-item list-writer">작성자</div>
                                 <div class="list-item list-date">작성일</div>
+                                <div class="list-item list-process">상태</div>
                             </div>
                             <div class="board-body">
                                 <!-- 반복문 아이템 -->
@@ -99,6 +101,7 @@
                                     </div>
                                     <div class="list-item list-writer">username</div>
                                     <div class="list-item list-date">2022.11.14</div>
+                                    <div class="list-item list-process"><span class="process-waiting">답변대기</span></div>
                                 </div>
                                 <!-- // 반복문 아이템 -->
                                 <!-- 반복문 아이템 -->
@@ -111,6 +114,7 @@
                                     </div>
                                     <div class="list-item list-writer">username</div>
                                     <div class="list-item list-date">2022.11.14</div>
+                                    <div class="list-item list-process"><span class="process-complete">답변완료</span></div>
                                 </div>
                                 <!-- // 반복문 아이템 -->
                                 <!-- 반복문 아이템 -->
@@ -123,6 +127,7 @@
                                     </div>
                                     <div class="list-item list-writer">username</div>
                                     <div class="list-item list-date">2022.11.14</div>
+                                    <div class="list-item list-process"><span class="process-complete">답변완료</span></div>
                                 </div>
                                 <!-- // 반복문 아이템 -->
                             </div>
@@ -148,9 +153,9 @@
                         </div>
                     </section>
                 </div>
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdMenuName" id="ContentPlaceHolder1_hdMenuName" value="정품등록접수">
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdSubMenuName" id="ContentPlaceHolder1_hdSubMenuName" value="정품등록 확인">
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdSubPage" id="ContentPlaceHolder1_hdSubPage" value="OrderRequestReceipt">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdMenuName" id="ContentPlaceHolder1_hdMenuName" value="온라인 AS 접수">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdSubMenuName" id="ContentPlaceHolder1_hdSubMenuName" value="AS 접수내역 확인">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdSubPage" id="ContentPlaceHolder1_hdSubPage" value="ASRequestReceipt">
                 <input type="hidden" name="ctl00$ContentPlaceHolder1$hdCustomerNo" id="ContentPlaceHolder1_hdCustomerNo">
                 <input type="hidden" name="ctl00$ContentPlaceHolder1$hdConfirmNo" id="ContentPlaceHolder1_hdConfirmNo">
                 <input type="hidden" name="ctl00$ContentPlaceHolder1$hdCheckConfirm" id="ContentPlaceHolder1_hdCheckConfirm">

@@ -24,13 +24,13 @@
                         <li>
                             <a href="aboutIntro.html">한국벨킨 고객지원</a>
                         </li>
-                        <li class="is-active">
+                        <li>
                             <a href="orderReceiveStep01.html">정품등록 접수</a>
                         </li>
                         <li>
                             <a href="asReceiveProductGuide.html">온라인 AS 접수</a>
                         </li>
-                        <li>
+                        <li class="is-active">
                             <a href="boardFaqOnlineAS.html">자주묻는질문</a>
                         </li>
                         <li>
@@ -44,38 +44,31 @@
         <div id="container">
             <div class="title-page">
                 <div class="inner">
-                    <h3 class="title-page-top">정품등록 확인</h3>
+                    <h3 class="title-page-top">자주묻는질문</h3>
                 </div>
             </div>
             <div class="ui-sub-menu">
                 <div class="inner">
                     <ul>
-                        <li><a href="orderReceiveStep01.html">정품등록 접수</a></li>
-                        <li class="is-active"><a href="orderReceiveLists.html">정품등록 확인</a></li>
+                        <li><a href="boardFaqOnlineAS.html">온라인 AS 관련</a></li>
+                        <li><a href="boardFaqGuarantee.html">보증기간 관련</a></li>
+                        <li class="is-active"><a href="boardFaqProblem.html">제품별 증상 및 해결법</a></li>
                     </ul>
                 </div>
             </div>
             <div id="contents">                 
                 <div class="inner">
                     <section class="contents-section">
-                        <h4 class="title-contents">정품등록 확인</h4>
-                        <p class="text-contents">
-                            <span class="text-paragraph">
-                                최근 30일 이내의 접수내역을 확인하실 수 있으며 그 이전의 접수내역은 조회 불가능합니다.
-                            </span>
-                        </p>
-                        <div class="search-container">
-                            <div class="search-input">
-                                <label for="ContentPlaceHolder1_tbxName">이름</label>
-                                <input name="ctl00$ContentPlaceHolder1$tbxName" type="text" id="ContentPlaceHolder1_tbxName" class="input" onkeypress="if(event.keyCode == 13) {return false;}" placeholder="이름을 입력해주세요." />
+                        <div class="search-container type-subject">
+                            <div class="search-input ui-select">
+                                <select name="ctl00$ContentPlaceHolder1$ddlSearchType" id="ContentPlaceHolder1_ddlSearchType" class="select">
+                                    <option selected="selected" value="Title">제목</option>
+                                    <option value="WriterName">글쓴이</option>
+                                
+                                </select>
                             </div>
-                            <div class="search-input">
-                                <label for="ContentPlaceHolder1_tbxTel">핸드폰번호</label>
-                                <input name="ctl00$ContentPlaceHolder1$tbxTel" type="text" id="ContentPlaceHolder1_tbxTel" class="input" onkeypress="if(event.keyCode == 13) {return false;}" placeholder="핸드폰번호를 입력해주세요. (000-1234-5678)" />
-                            </div>
-                            <div class="search-input">
-                                <label for="ContentPlaceHolder1_tbxConfirmNo">비밀번호</label>
-                                <input name="ctl00$ContentPlaceHolder1$tbxConfirmNo" type="password" maxlength="10" id="ContentPlaceHolder1_tbxConfirmNo" class="input" onkeypress="if(event.keyCode == 13) {__doPostBack('ctl00$ContentPlaceHolder1$ibtnSearch',''); return false;}" placeholder="비밀번호를 입력해주세요." />
+                            <div class="search-input ui-subject">
+                                <input name="ctl00$ContentPlaceHolder1$txtSearchString" type="text" id="ContentPlaceHolder1_txtSearchString" class="input" onkeypress="if(event.keyCode == 13) {__doPostBack('ctl00$ContentPlaceHolder1$btnSearch',''); return false;}" class="input" placeholder="어떤 내용을 찾고 계신가요?">
                             </div>
                             <div class="search-button">
                                 <button type="submit" name="ctl00$ContentPlaceHolder1$ibtnSearch" id="ContentPlaceHolder1_ibtnSearch">검색</button>
@@ -85,8 +78,6 @@
                             <div class="board-header">
                                 <div class="list-item list-number">번호</div>
                                 <div class="list-item list-subject">제목</div>
-                                <div class="list-item list-writer">작성자</div>
-                                <div class="list-item list-date">작성일</div>
                             </div>
                             <div class="board-body">
                                 <!-- 반복문 아이템 -->
@@ -97,8 +88,6 @@
                                             제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 
                                         </a>
                                     </div>
-                                    <div class="list-item list-writer">username</div>
-                                    <div class="list-item list-date">2022.11.14</div>
                                 </div>
                                 <!-- // 반복문 아이템 -->
                                 <!-- 반복문 아이템 -->
@@ -109,8 +98,6 @@
                                             제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요.  
                                         </a>
                                     </div>
-                                    <div class="list-item list-writer">username</div>
-                                    <div class="list-item list-date">2022.11.14</div>
                                 </div>
                                 <!-- // 반복문 아이템 -->
                                 <!-- 반복문 아이템 -->
@@ -121,8 +108,6 @@
                                             제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 
                                         </a>
                                     </div>
-                                    <div class="list-item list-writer">username</div>
-                                    <div class="list-item list-date">2022.11.14</div>
                                 </div>
                                 <!-- // 반복문 아이템 -->
                             </div>
@@ -148,12 +133,9 @@
                         </div>
                     </section>
                 </div>
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdMenuName" id="ContentPlaceHolder1_hdMenuName" value="정품등록접수">
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdSubMenuName" id="ContentPlaceHolder1_hdSubMenuName" value="정품등록 확인">
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdSubPage" id="ContentPlaceHolder1_hdSubPage" value="OrderRequestReceipt">
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdCustomerNo" id="ContentPlaceHolder1_hdCustomerNo">
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdConfirmNo" id="ContentPlaceHolder1_hdConfirmNo">
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdCheckConfirm" id="ContentPlaceHolder1_hdCheckConfirm">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdMenuName" id="ContentPlaceHolder1_hdMenuName" value="자주 묻는 질문">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdSubMenuName" id="ContentPlaceHolder1_hdSubMenuName" value="온라인 AS 관련">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdSubPage" id="ContentPlaceHolder1_hdSubPage" value="BoardView5">
             </div>
         </div>
         <!-- // 컨텐츠 영역 -->

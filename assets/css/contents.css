@@ -100,9 +100,9 @@
     border-bottom: 1px solid #ebebeb;
   }
 }
-@media only screen and (max-width: 1024px) {
-  #container .ui-sub-menu li:last-child {
-    border-right: 0;
+@media only screen and (max-width: 520px) {
+  #container .ui-sub-menu li:nth-child(even) {
+    border-right: none;
   }
 }
 #container .ui-sub-menu li.is-active a {
@@ -644,6 +644,76 @@
   margin-top: 32px;
   margin-bottom: 70px;
 }
+#contents .search-container.type-subject {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media only screen and (max-width: 1200px) {
+  #contents .search-container.type-subject {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 520px) {
+  #contents .search-container.type-subject {
+    display: block;
+  }
+}
+#contents .search-container.type-subject .ui-select {
+  width: 178px;
+}
+@media only screen and (max-width: 1200px) {
+  #contents .search-container.type-subject .ui-select {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  #contents .search-container.type-subject .ui-select {
+    width: 30%;
+    display: inline-block;
+  }
+}
+#contents .search-container.type-subject .ui-subject {
+  width: 530px;
+}
+@media only screen and (max-width: 1200px) {
+  #contents .search-container.type-subject .ui-subject {
+    width: 58%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  #contents .search-container.type-subject .ui-subject {
+    width: 68%;
+    margin-left: 2%;
+    display: inline-block;
+  }
+}
+#contents .search-container.type-subject .search-button {
+  width: 144px;
+}
+@media only screen and (max-width: 1200px) {
+  #contents .search-container.type-subject .search-button {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  #contents .search-container.type-subject .search-button {
+    width: 100%;
+  }
+}
+#contents .search-container.type-subject .search-input {
+  margin-right: 20px;
+}
+@media only screen and (max-width: 1200px) {
+  #contents .search-container.type-subject .search-input {
+    margin: 0;
+  }
+}
 @media only screen and (max-width: 1200px) {
   #contents .search-container {
     display: grid;
@@ -779,7 +849,6 @@
 }
 @media only screen and (max-width: 520px) {
   #contents .board-lists .list-item.list-subject {
-    margin-bottom: 8px;
     padding-right: 0;
   }
 }
@@ -806,11 +875,42 @@
     opacity: 0.5;
     position: relative;
     padding-right: 16px;
+    margin-top: 8px;
   }
   #contents .board-lists .list-item.list-writer::after {
     content: "";
     position: absolute;
     right: -2px;
+    top: 6px;
+    width: 1px;
+    height: 12px;
+    background: #000;
+    opacity: 0.3;
+    margin: 0 8px;
+    vertical-align: middle;
+  }
+}
+#contents .board-lists .list-item.list-process {
+  width: 15%;
+  position: relative;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 1200px) {
+  #contents .board-lists .list-item.list-process {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  #contents .board-lists .list-item.list-process {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    margin-top: 8px;
+  }
+  #contents .board-lists .list-item.list-process::after {
+    content: "";
+    position: absolute;
+    left: -2px;
     top: 6px;
     width: 1px;
     height: 12px;
@@ -834,8 +934,14 @@
     vertical-align: top;
     width: auto;
     opacity: 0.5;
+    margin-top: 8px;
   }
 }
 #contents .board-lists .board-item {
   border-bottom: 1px solid #EBEBEB;
+}
+#contents .board-lists .board-item.no-data {
+  padding: 10% 10px;
+  text-align: center;
+  display: block;
 }
