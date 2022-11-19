@@ -22,13 +22,13 @@
                 </h1>
                 <div class="global-navigation">
                     <ul>
-                        <li class="is-active">
+                        <li>
                             <a href="aboutIntro.html">한국벨킨 고객지원</a>
                         </li>
                         <li>
                             <a href="orderReceiveStep01.html">정품등록 접수</a>
                         </li>
-                        <li>
+                        <li class="is-active">
                             <a href="asReceiveProductGuide.html">온라인 AS 접수</a>
                         </li>
                         <li>
@@ -46,40 +46,41 @@
         <div id="container">
             <div class="title-page">
                 <div class="inner">
-                    <h3 class="title-page-top">한국벨킨 고객지원 홈페이지 소개</h3>
+                    <h3 class="title-page-top">온라인 AS 접수</h3>
                 </div>
             </div>
             <div class="ui-sub-menu">
                 <div class="inner">
                     <ul>
-                        <li class="is-active"><a href="aboutIntro.html">한국벨킨 고객지원 홈페이지 소개</a></li>
-                        <li><a href="activationCampaign.html">홀로그램 스티커 정품 인증 캠페인</a></li>
-                        <li><a href="asRegisterGuide.html">온라인 AS 진행절차 안내</a></li>
-                        <li><a href="asProductGuide.html">온라인 AS 접수 가능 제품 안내</a></li>
+                        <li><a href="asReceiveProductGuide.html">온라인 AS 접수 가능 제품 안내</a></li>
+                        <li class="is-active"><a href="asReceiveStep01.html">온라인 AS 접수</a></li>
+                        <li><a href="asReceiveLists.html">AS 접수내역 확인</a></li>
                     </ul>
                 </div>
             </div>
-            <div id="contents">
+            <div id="contents">                 
                 <div class="inner">
-                    <section class="contents-section flex align-items-center justify-content-space-between about-intro-contents">
-                        <div class="txt">
-                            <h4 class="title-contents">한국벨킨 고객지원 홈페이지 소개</h4>
-                            <p class="text-contents">
-                                <span class="text-paragraph">
-                                    한국벨킨 고객지원 홈페이지에서는 <br>
-                                    고객님들께서 구매하신 제품의 <br>
-                                    <strong>온라인 A/S 접수 및 진행</strong>과 관련된 <br>
-                                    서비스를 제공하고 있습니다.
-                                </span>
-                                <span class="text-paragraph">
-                                    A/S와 관련된 정보 및 접수 상태를 <br>
-                                    홈페이지 상에서 확인하실 수 있습니다.
-                                </span>
-                            </p>
+                    <section class="contents-section">
+                        <h4 class="title-contents">온라인 AS 보증기간 확인</h4>
+                        <ul class="list-bullet">
+                            <li>A/S접수는 보증 기간 내의 제품에 대해서 가능하며, 고객의 과실로 인한 고장은 A/S가 제한됩니다.</li>
+                            <li>외부 충격, 낙하, 기타 고객 과실에 의한 파손 및 멸손, 분실의 경우 보증기간 내의 제품이더라도 A/S 지원이 되지 않습니다.</li>
+                            <li>제품별 보증기간은 과거 AS 이력과 관계없이 최초 구매일로부터 적용되며, 제품 패키지 및 온라인에서 확인하실 수 있습니다.</li>
+                            <li>보증기간 착오로 접수하시는 경우, 전화 혹은 이메일을 통해 서비스 반려 통보를 드릴 수 있으니 양해 부탁 드립니다.</li>
+                        </p>
+                    </section>
+                    <section class="contents-section">
+                        <h3 class="title-round-belkin"><span>의뢰하시는 제품이 보증기간 이내에 해당하나요?</span></h3>
+                        <div class="guarantee-check">
+                            <button type="submit" name="ctl00$ContentPlaceHolder1$btnGuaranteeYes" value="예" id="ContentPlaceHolder1_btnGuaranteeYes" class="button-white" onclick="window.location.href='asReceiveStep04.html'">네, 보증기간에 해당해요.</button>
+                            <button type="submit" name="ctl00$ContentPlaceHolder1$btnGuaranteeNo" value="아니요" id="ContentPlaceHolder1_btnGuaranteeNo" class="button-white" onclick="alert('보증기간 이내인 경우에만 A/S 접수 등록이 가능합니다.');">아니요, 보증기간에 해당하지 않아요.</button>
                         </div>
-                        <div class="img"><img src="assets/images/img_belkin_company.png" alt=""></div>
                     </section>
                 </div>
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdContentsNo" id="ContentPlaceHolder1_hdContentsNo">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdBoardNo" id="ContentPlaceHolder1_hdBoardNo">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdMenuName" id="ContentPlaceHolder1_hdMenuName" value="온라인 AS 접수">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdSubMenuName" id="ContentPlaceHolder1_hdSubMenuName" value="온라인 AS 접수">
             </div>
         </div>
         <!-- // 컨텐츠 영역 -->

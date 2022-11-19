@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="assets/js/common.js"></script>
+        <script src="assets/js/common.js"></script>
+        <title>Belkin</title>
+    </head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1>
+                    <a href="index.html"><span class="a11y-text">Belkin</span></a>
+                </h1>
+                <div class="global-navigation">
+                    <ul>
+                        <li>
+                            <a href="aboutIntro.html">한국벨킨 고객지원</a>
+                        </li>
+                        <li class="is-active">
+                            <a href="orderReceiveStep01.html">정품등록 접수</a>
+                        </li>
+                        <li>
+                            <a href="asReceiveProductGuide.html">온라인 AS 접수</a>
+                        </li>
+                        <li>
+                            <a href="boardFaqOnlineAS.html">자주묻는질문</a>
+                        </li>
+                        <li>
+                            <a href="boardNoticeList.html">공지사항</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="global-navigation-m"><span class="a11y-text">메뉴</span></button>
+            </div>
+        </header>
+        <!-- 컨텐츠 영역 -->
+        <div id="container">
+            <div class="title-page">
+                <div class="inner">
+                    <h3 class="title-page-top">정품등록 접수</h3>
+                </div>
+            </div>
+            <div class="ui-sub-menu">
+                <div class="inner">
+                    <ul>
+                        <li class="is-active"><a href="orderReceiveStep01.html">정품등록 접수</a></li>
+                        <li><a href="orderReceiveLists.html">정품등록 확인</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contents">                 
+                <div class="inner">
+                    <section class="contents-section receive-input-section">
+                        <h4 class="title-contents">정품등록 접수 정보입력</h4>
+                        <p class="text-contents">
+                            <span class="text-paragraph">아래 사항을 모두 입력하신 후 저장 버튼을 눌러주세요.</span>
+                        </p>
+                        <ul class="list-bullet">
+                            <li>
+                                <strong>한 건당 한개의 제품</strong>만 등록 가능하며, 다수의 제품을 등록하시는 경우에는 동일한 고객명 / 연락처 / 이메일 정보로 등록해 주시면 됩니다. 각 항목별 띄어쓰기 및 오타 등에 유의 바랍니다.
+                            </li>
+                            <li>
+                                정품 등록은 입력하신 정보를 기반으로 즉시 등록되며, 구매 영수증이 미흡하거나(구매일자/상품명/판매처 누락 등), 제품과 영수증이 상이하거나, 불법 판매처 구매 제품 등 기타 사유로 A/S시 활용이 불가할 수 있음을 유의 부탁드립니다.
+                            </li>
+                            <li>
+                                사용하시는 브라우저의 <strong>팝업 차단을 일시 해제</strong>하여 주십시오. 기타 브라우저는 사용하시는 앱의 도움말을 참고 하십시오. <br>
+                                <strong>PC 및 안드로이드 :</strong> 팝업 사용 경고창이 뜨면 사용 허용을 하십시오. 
+                                <strong>아이폰/아이패드(사파리) :</strong> iOS 설정 메뉴 내 - 사파리 - 팝업 차단 해제 후 진행 하십시오. 
+                            </li>
+                            <li>정확한 모델명을 모르실 경우 한국벨킨 고객센터(1544-1011)로 문의 바랍니다.</li>
+                        </p>
+                    </section>
+                    <section class="contents-section receive-input-section">
+                        <h3 class="title-with-line">
+                            <span class="txt">접수 정보</span>
+                        </h3>
+                        <div class="form-grid-container">
+                            <div class="grid-item">
+                                <div class="grid-label">접수번호</div>
+                                <div class="grid-form">접수번호는 자동으로 생성됩니다.</div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="contents-section receive-input-section">
+                        <h3 class="title-with-line">
+                            <span class="txt">제품 정보</span>
+                        </h3>
+                        <div class="form-grid-container">
+                            <div class="grid-item">
+                                <div class="grid-label">제품군</div>
+                                <div class="grid-form"><span>충전 제품</span></div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-label">모델명</div>
+                                <div class="grid-form">
+                                    <div class="ui-search-input">
+                                        <input name="ctl00$ContentPlaceHolder1$tbxModelName" type="text" id="ContentPlaceHolder1_tbxModelName" readonly="true"  class="ui-input" placeholder="모델명 찾기" />
+                                        <button type="button" name="ctl00$ContentPlaceHolder1$ibtnFindModel" id="ContentPlaceHolder1_ibtnFindModel" class="button-belkin" onclick="layerToggle('layer-search-product')">찾기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-grid-container">
+                            <div class="grid-item">
+                                <div class="grid-label">정품인증번호</div>
+                                <div class="grid-form">
+                                    <input name="ctl00$ContentPlaceHolder1$tbxSerialNo" type="text" maxlength="20" id="ContentPlaceHolder1_tbxSerialNo" class="ui-input" placeholder="제품 상자에 표기된 정품 인증번호 입력" />
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-label">구매일</div>
+                                <div class="grid-form">
+                                    <div class="ui-tel-input">
+                                        <input name="ctl00$ContentPlaceHolder1$tbxBuyYear" type="text" maxlength="4" id="ContentPlaceHolder1_tbxBuyYear" class="ui-input" onkeypress="if(event.keyCode == 13) {return false;}" placeholder="연" />
+                                        <input name="ctl00$ContentPlaceHolder1$tbxBuyMonth" type="text" maxlength="2" id="ContentPlaceHolder1_tbxBuyMonth" class="ui-input" onkeypress="if(event.keyCode == 13) {return false;}" placeholder="월" />
+                                        <input name="ctl00$ContentPlaceHolder1$tbxBuyDate" type="text" maxlength="2" id="ContentPlaceHolder1_tbxBuyDate" class="ui-input" onkeypress="if(event.keyCode == 13) {return false;}" placeholder="일" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-grid-container">
+                            <div class="grid-item">
+                                <div class="grid-label">구매처</div>
+                                <div class="grid-form">
+                                    <div class="ui-select">
+                                        <select name="ctl00$ContentPlaceHolder1$ddlBuyStore" id="ContentPlaceHolder1_ddlBuyStore">
+                                            <option value="온라인">온라인</option>
+                                            <option value="오프라인">오프라인</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-label">구매처명</div>
+                                <div class="grid-form">
+                                    <div class="ui-search-input">
+                                        <input name="ctl00$ContentPlaceHolder1$tbxStoreName" type="text" maxlength="50" id="ContentPlaceHolder1_tbxStoreName" class="ui-input" placeholder="구매처명 입력" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="contents-section receive-input-section">
+                        <h3 class="title-with-line">
+                            <span class="txt">고객 정보</span>
+                        </h3>
+                        <div class="form-grid-container">
+                            <div class="grid-item">
+                                <div class="grid-label">고객명</div>
+                                <div class="grid-form">
+                                    <input name="ctl00$ContentPlaceHolder1$tbxName" type="text" id="ContentPlaceHolder1_tbxName" class="ui-input" onkeypress="if(event.keyCode == 13) {return false;}" placeholder="고객명 입력" />
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-label">휴대폰번호</div>
+                                <div class="grid-form">
+                                    <div class="ui-tel-input">
+                                        <input name="ctl00$ContentPlaceHolder1$tbxTel1" type="text" maxlength="3" id="ContentPlaceHolder1_tbxTel1" class="ui-input" onkeypress="if(event.keyCode == 13) {return false;}" placeholder="010" />
+                                        <input name="ctl00$ContentPlaceHolder1$tbxTel2" type="text" maxlength="4" id="ContentPlaceHolder1_tbxTel2" class="ui-input" onkeypress="if(event.keyCode == 13) {return false;}" placeholder="1234" />
+                                        <input name="ctl00$ContentPlaceHolder1$tbxTel3" type="text" maxlength="4" id="ContentPlaceHolder1_tbxTel3" class="ui-input" onkeypress="if(event.keyCode == 13) {return false;}" placeholder="5678" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-grid-container">
+                            <div class="grid-item">
+                                <div class="grid-label">비밀번호</div>
+                                <div class="grid-form">
+                                    <input name="ctl00$ContentPlaceHolder1$tbxOrderPassword" type="password" id="ContentPlaceHolder1_tbxOrderPassword" class="ui-input" maxlength="10" onkeypress="if(event.keyCode == 13) {return false;}" placeholder="영문+숫자 조합 6자리~10자리로 입력" />
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-label">메일 주소</div>
+                                <div class="grid-form">
+                                    <div class="ui-email-input">
+                                        <span class="cell-mail">
+                                            <input name="ctl00$ContentPlaceHolder1$tbxEmail1" type="text" maxlength="15" id="ContentPlaceHolder1_tbxEmail1" class="ui-input" onkeypress="if(event.keyCode == 13) {return false;}" /> 
+                                        </span>
+                                        <span class="cell-at">@</span>
+                                        <span class="cell-url">
+                                            <input name="ctl00$ContentPlaceHolder1$tbxEmail2" type="text" maxlength="20" id="ContentPlaceHolder1_tbxEmail2" class="ui-input" onkeypress="if(event.keyCode == 13) {return false;}" />
+                                        </span>
+                                    </div>
+                                    <div class="ui-select">
+                                        <select name="ctl00$ContentPlaceHolder1$ddlEmail" id="ContentPlaceHolder1_ddlEmail" onchange="EmailChange();">
+                                            <option value="">직접입력</option>
+                                            <option value="naver.com">네이버</option>
+                                            <option value="nate.com">네이트</option>
+                                            <option value="empal.com">엠파스</option>
+                                            <option value="hotmail.com">핫메일</option>
+                                            <option value="yahoo.com">야후</option>
+                                            <option value="paran.com">파란</option>
+                                            <option value="hanmail.net">한메일</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-grid-container">
+                            <div class="grid-item only-form">
+                                <div class="grid-label">주소</div>
+                                <div class="grid-form">
+                                    <div class="ui-address-input">
+                                        <span class="cell-zipcode">
+                                            <input name="ctl00$ContentPlaceHolder1$tbxZipCode" type="text" id="ContentPlaceHolder1_tbxZipCode" class="ui-input" readonly placeholder="우편번호" />
+                                        </span>
+                                        <span class="cell-dong">
+                                            <input name="ctl00$ContentPlaceHolder1$tbxAddrDong" type="text" maxlength="50" id="ContentPlaceHolder1_tbxAddrDong" class="ui-input" onkeypress="if(event.keyCode == 13) {return false;}" readonly placeholder="주소 찾기 선택" />
+                                        </span>
+                                        <span class="cell-find">
+                                            <button type="button" name="ctl00$ContentPlaceHolder1$ibtnFindAddress" id="ContentPlaceHolder1_ibtnFindAddress" class="button-belkin">주소 찾기</button>
+                                        </span>
+                                    </div>
+                                    <div class="ui-address-input">
+                                        <span class="cell-bunji">
+                                            <input name="ctl00$ContentPlaceHolder1$tbxAddrBunji" type="text" maxlength="150" id="ContentPlaceHolder1_tbxAddrBunji" class="ui-input" onkeypress="if(event.keyCode == 13) {return false;}" placeholder="도로명 및 지명 주소" />
+                                        </span>
+                                        <span class="cell-etc">
+                                            <input name="ctl00$ContentPlaceHolder1$tbxAddrEtc" type="text" maxlength="50" id="ContentPlaceHolder1_tbxAddrEtc" class="ui-input" onkeypress="if(event.keyCode == 13) {return false;}" placeholder="상세주소" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-policy">
+                            개인정보 활용 동의 페이지 노출
+                        </div>
+                        <div class="form-agree-container">
+                            <div class="form-agree">
+                                <div class="ui-checkbox">
+                                    <input  type="checkbox" id="ContentPlaceHolder1_chkManageAgree" name="ctl00$ContentPlaceHolder1$chkManageAgree" class="inp-cbx" />
+                                    <label class="cbx" for="ContentPlaceHolder1_chkManageAgree">
+                                        <span>
+                                            <svg width="12px" height="10px">
+                                                <use xlink:href="#check-4"></use>
+                                            </svg>
+                                        </span>
+                                        <span>입력한 정보는 추후 A/S에도 활용될 수 있음에 동의합니다. (필수)</span>
+                                    </label>
+                                    <svg class="inline-svg">
+                                        <symbol id="check-4" viewbox="0 0 12 10">
+                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                        </symbol>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="form-agree">
+                                <p>벨킨의 신제품 및 할인 등 각종 이벤트 프로모션 수신에 동의 합니다. (선택)</p>
+                                <div class="ui-checkbox-sm">
+                                    <input id="ContentPlaceHolder1_chkPhoneAgree" type="checkbox" name="ctl00$ContentPlaceHolder1$chkPhoneAgree">
+                                    <label for="ContentPlaceHolder1_chkPhoneAgree" class="check">
+                                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                            <path
+                                                d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                        <span class="label-text">전화</span>
+                                    </label>
+                                </div>
+                                <div class="ui-checkbox-sm">
+                                    <input id="ContentPlaceHolder1_chkSMSAgree" type="checkbox" name="ctl00$ContentPlaceHolder1$chkSMSAgree">
+                                    <label for="ContentPlaceHolder1_chkSMSAgree" class="check">
+                                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                            <path
+                                                d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                        <span class="label-text">문자</span>
+                                    </label>
+                                </div>
+                                <div class="ui-checkbox-sm">
+                                    <input id="ContentPlaceHolder1_chkEmailAgree" type="checkbox" name="ctl00$ContentPlaceHolder1$chkEmailAgree">
+                                    <label for="ContentPlaceHolder1_chkEmailAgree" class="check">
+                                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                            <path
+                                                d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                        <span class="label-text">이메일</span>
+                                    </label>
+                                </div>
+                                <div class="ui-checkbox-sm">
+                                    <input id="ContentPlaceHolder1_chkKakaoAgree" type="checkbox" name="ctl00$ContentPlaceHolder1$chkKakaoAgree">
+                                    <label for="ContentPlaceHolder1_chkKakaoAgree" class="check">
+                                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                            <path
+                                                d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                        <span class="label-text">카카오톡</span>
+                                    </label>
+                                </div>
+                                <div class="agree-notice">
+                                    마케팅 정보 수신 동의는 신제품 출시 및 이벤트 프로모션 안내를 위함이며, <br>동의는 선택사항으로 수신동의 하지 않아도 정품등록 및 추후 A/S 접수 가능합니다.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="submit-container">
+                        <button type="submit" name="ctl00$ContentPlaceHolder1$ibtnReceiveAS" value="저장" onclick="return checkValidation();" id="ContentPlaceHolder1_ibtnReceiveAS"  class="button-belkin">저장</button>
+                    </section>
+                </div>
+            </div>
+            <!-- 모델명 찾기 레이어 팝업 -->
+            <div id="layerPopup" class="layer-search-product" style="display: none;">
+                <div class="layer">
+                    <div class="layer-header">
+                        <h3 class="title-layer">
+                            <span>모델명 찾기</span>
+                            <button type="button" onclick="layerToggle('layer-search-product')">
+                                <img src="assets/images/icon_close.png" alt="레이어 팝업 닫기">
+                            </button>
+                        </h3>
+                    </div>
+                    <div class="layer-body">
+                        <div class="layer-search">
+                            <div class="search-container">
+                                <div class="search-input ui-subject">
+                                    <input name="ctl00$ContentPlaceHolder1$tbxSearchString" type="text" id="ContentPlaceHolder1_tbxSearchString" onkeypress="if(event.keyCode == 13) {__doPostBack('ctl00$ContentPlaceHolder1$ibtnSearch',''); return false;}" class="ui-input" placeholder="어떤 모델을 찾고 계신가요?">
+                                </div>
+                                <div class="search-button">
+                                    <button type="button" name="ctl00$ContentPlaceHolder1$ibtnSearch" id="ContentPlaceHolder1_ibtnSearch" class="button-belkin">검색</button>
+                                </div>
+                            </div>
+                            <div class="search-result">
+                                <ul class="search-product-lists">
+                                    <li>
+                                        <button type="button">
+                                            <div class="img"><img src="assets/images/@img_product.png" alt=""></div>
+                                            <div class="txt">F8J051btWHT</div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button">
+                                            <div class="img"><img src="assets/images/@img_product.png" alt=""></div>
+                                            <div class="txt">F8J051btWHT</div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button">
+                                            <div class="img"><img src="assets/images/@img_product.png" alt=""></div>
+                                            <div class="txt">F8J051btWHT</div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button">
+                                            <div class="img"><img src="assets/images/@img_product.png" alt=""></div>
+                                            <div class="txt">F8J051btWHT</div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button">
+                                            <div class="img"><img src="assets/images/@img_product.png" alt=""></div>
+                                            <div class="txt">F8J051btWHT</div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button">
+                                            <div class="img"><img src="assets/images/@img_product.png" alt=""></div>
+                                            <div class="txt">F8J051btWHT</div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button">
+                                            <div class="img"><img src="assets/images/@img_product.png" alt=""></div>
+                                            <div class="txt">F8J051btWHT</div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button">
+                                            <div class="img"><img src="assets/images/@img_product.png" alt=""></div>
+                                            <div class="txt">F8J051btWHT</div>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pagination">
+                                <button type="button" name="ctl00$ContentPlaceHolder1$lbtnFirst" id="ContentPlaceHolder1_lbtnFirst" class="pagination-first">
+                                    <span class="a11y-text">처음 페이지</span>
+                                </button>
+                                <button type="button" name="ctl00$ContentPlaceHolder1$lbtnPrevious" id="ContentPlaceHolder1_lbtnPrevious"  class="pagination-prev">
+                                    <span class="a11y-text">이전 페이지</span>
+                                </button>
+                                <button type="button" class="is-active">1</button>
+                                <button type="button">2</button>
+                                <button type="button">3</button>
+                                <button type="button">4</button>
+                                <button type="button">5</button>
+                                <button type="button" name="ctl00$ContentPlaceHolder1$lbtnNext" id="ContentPlaceHolder1_lbtnNext"  class="pagination-next">
+                                    <span class="a11y-text">다음 페이지</span>
+                                </button>
+                                <button type="button" name="ctl00$ContentPlaceHolder1$lbtnLast" id="ContentPlaceHolder1_lbtnLast"  class="pagination-last">
+                                    <span class="a11y-text">마지막 페이지</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdCompanyID" id="ContentPlaceHolder1_hdCompanyID" value="belkin">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdChannel" id="ContentPlaceHolder1_hdChannel" value="WEB">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdSearchString" id="ContentPlaceHolder1_hdSearchString">
+            </div>
+            <!-- // 모델명 찾기 레이어 팝업 -->
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdCompanyID" id="ContentPlaceHolder1_hdCompanyID" value="belkin">
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdContentsNo" id="ContentPlaceHolder1_hdContentsNo">
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdBoardNo" id="ContentPlaceHolder1_hdBoardNo">
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdMenuName" id="ContentPlaceHolder1_hdMenuName" value="정품등록접수">
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdSubMenuName" id="ContentPlaceHolder1_hdSubMenuName" value="정품등록 접수">
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdRegistFlag" id="ContentPlaceHolder1_hdRegistFlag">
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdOrderNo" id="ContentPlaceHolder1_hdOrderNo">
+            <script language="javascript" type="text/javascript">
+                //- 유효성 검사
+                function checkValidation() {
+        
+                    //- 기본정보
+                    if (!checkObject(document.getElementById("ContentPlaceHolder1_tbxModelName"), "모델명을 입력해주세요")) return false;
+        
+                    //- 구매일 체크
+                    if (!checkObject(document.getElementById("ContentPlaceHolder1_tbxBuyYear"), "구매일을 입력해주세요")) return false;
+                    if (!checkObject(document.getElementById("ContentPlaceHolder1_tbxBuyMonth"), "구매일을 입력해주세요")) return false;
+                    if (!checkObject(document.getElementById("ContentPlaceHolder1_tbxBuyDate"), "구매일을 입력해주세요")) return false;
+                    if (!checkObject(document.getElementById("ContentPlaceHolder1_ddlBuyStore"), "구매처를 입력해주세요")) return false;
+                    if (!checkObject(document.getElementById("ContentPlaceHolder1_tbxStoreName"), "구매처명을 입력해주세요")) return false;
+        
+                    if (!checkDate(document.getElementById("ContentPlaceHolder1_tbxBuyYear"))) return false;
+                    if (!checkDate(document.getElementById("ContentPlaceHolder1_tbxBuyMonth"))) return false;
+                    if (!checkDate(document.getElementById("ContentPlaceHolder1_tbxBuyDate"))) return false;
+                    if (!checkDate2(document.getElementById("ContentPlaceHolder1_tbxBuyYear"), document.getElementById("ContentPlaceHolder1_tbxBuyMonth"), document.getElementById("ContentPlaceHolder1_tbxBuyDate"))) return false;
+        
+                    //- 구매자 정보
+                    if (!checkObject(document.getElementById("ContentPlaceHolder1_tbxName"), "이름을 입력해주세요")) return false;
+        
+                    if (!checkPhone(true, document.getElementById("ContentPlaceHolder1_tbxTel1")
+                          , document.getElementById("ContentPlaceHolder1_tbxTel2")
+                                , document.getElementById("ContentPlaceHolder1_tbxTel3")
+                                , 3, "휴대폰번호")) return false;
+                    if (!checkEmail(document.getElementById("ContentPlaceHolder1_tbxEmail1"), document.getElementById("ContentPlaceHolder1_tbxEmail2"))) return false;
+        
+                    if (!checkObject(document.getElementById("ContentPlaceHolder1_tbxAddrDong"), "주소를 입력해주세요")) return false;
+                    if (!checkObject(document.getElementById("ContentPlaceHolder1_tbxAddrBunji"), "주소를 입력해주세요")) return false;
+        
+                    if (!checkObject(document.getElementById("ContentPlaceHolder1_tbxOrderPassword"), "비밀번호를 입력해주세요")) return false;
+        
+                    if (!checkEngNum(document.getElementById("ContentPlaceHolder1_tbxOrderPassword"),"비밀번호")) return false;
+                    if (!checkObjectLength(document.getElementById("ContentPlaceHolder1_tbxOrderPassword"), 6, "비밀번호는 6자 이상이어야 합니다.")) return false;
+        
+                    checkSave();
+                }
+        
+                function checkDate(tbxDate) {
+                    var date = tbxDate.value;
+                    var regstr = /^[0-9]*$/;
+        
+                    if (!regstr.test(date)) {
+        
+                        alert('구매일을 올바르게 입력해주세요.');
+        
+                        tbxDate.focus();
+                        return false;
+                    }
+        
+                    return true;
+        
+                }
+        
+                function checkDate2(tbxYear, tbxMonth, tbxDate) {
+                    var today = new Date();
+        
+                    var year = tbxYear.value;
+                    var month = tbxMonth.value;
+                    var date = tbxDate.value;
+        
+                    if (year < 1980 || year > today.getFullYear()) {
+                        alert('구매일을 올바르게 입력해주세요.');
+        
+                        tbxYear.focus();
+                        return false;
+                    }
+        
+                    if (month < 1 || month > 12) {
+                        alert('구매일을 올바르게 입력해주세요.');
+        
+                        tbxMonth.focus();
+                        return false;
+                    }
+                    if (month == 2) //- 1~7월 이면서 홀수개월 이거나 8~12 월이면서 짝수개월인 경우
+                    {
+                        if (date < 1 || date > 29) {
+                            alert('구매일을 올바르게 입력해주세요.');
+        
+                            tbxDate.focus();
+                            return false;
+                        }
+        
+                    }
+                    else if ((month < 8 && month % 2 != 0) || (month > 7 && month % 2 == 0)) //- 1~7월 이면서 홀수개월 이거나 8~12 월이면서 짝수개월인 경우
+                    {
+                        if (date < 1 || date > 31) {
+                            alert('구매일을 올바르게 입력해주세요.');
+        
+                            tbxDate.focus();
+                            return false;
+                        }
+                    }
+                    else { //- 1~7월 이면서 짝수개월 이거나 8~12 월이면서 홀수개월인 경우
+                        if (date < 1 || date > 30) {
+                            alert('구매일을 올바르게 입력해주세요.');
+        
+                            tbxDate.focus();
+                            return false;
+                        }
+                    }
+        
+                    if ((year > today.getFullYear() && month >= today.getMonth() + 1 && date >= today.getDate()) ||
+                        (year == today.getFullYear() && month > today.getMonth() + 1 && date >= today.getDate()) ||
+                        (year == today.getFullYear() && month == today.getMonth() + 1 && date > today.getDate())
+                        ) {
+                        alert('구매일을 올바르게 입력해주세요.');
+        
+                        tbxYear.focus();
+                        return false;
+                    }
+        
+        
+        
+                    return true;
+        
+                }
+        
+                //- 컨트롤(전화번호) 체크 (type -> true : 필수, false : 필수아님)
+                function checkPhone(type, obj1, obj2, obj3, len, sMsg) {
+        
+                    if (!type) {
+                        var obj = trim(obj1.value) + trim(obj2.value) + trim(obj3.value);
+                        if (obj == "") {
+                            return true;
+                        }
+                    }
+        
+                    var sMsg1 = sMsg + "를 입력해주세요!";
+                    var sMsg2 = sMsg + "를 올바르게 입력해주세요!";
+        
+                    if (!checkObject(obj1, sMsg1)) return false;
+                    if (!checkObjectLength(obj1, len, sMsg2)) return false;
+                    if (!checkPhoneNo(obj1)) return false;
+                    if (!checkObject(obj2, sMsg1)) return false;
+                    if (!checkObjectLength(obj2, 3, sMsg2)) return false;
+                    if (!checkPhoneNo(obj2)) return false;
+                    if (!checkObject(obj3, sMsg1)) return false;
+                    if (!checkObjectLength(obj3, 3, sMsg2)) return false;
+                    if (!checkPhoneNo(obj3)) return false;
+        
+                    return true;
+                }
+        
+                //- 컨트롤(전화번호) 체크
+                function checkPhoneNo(PhoneNo) {
+                    var phone = PhoneNo.value;
+                    var regstr = /^[0-9]*$/;
+        
+                    if (!regstr.test(phone)) {
+        
+                        alert('올바른 전화번호를 입력하세요.');
+                        PhoneNo.focus();
+                        return false;
+                    }
+        
+                    return true;
+        
+                }
+        
+                //- 컨트롤(비밀번호) 체크
+                function checkEngNum(tbx, sMsg) {
+                    var tbx = tbx.value;
+                    var regstr = /^[a-zA-Z0-9]+$/;
+        
+                    if (!regstr.test(tbx)) {
+        
+                        alert("잘못된 " + sMsg + "입니다.");
+        
+                        tbx.focus();
+                        return false;
+                    }
+        
+                    return true;
+        
+                }
+                //- 컨트롤(이메일) 체크
+                function checkEmail(EmailID, EmailAddress) {
+        
+                    if (!checkObject(EmailID, "메일주소를 입력해주세요!")) return false;
+                    if (!checkObject(EmailAddress, "메일주소를 입력해주세요!")) return false;
+        
+                    var email = EmailID.value + "@" + EmailAddress.value;
+        
+                    var regstr = /^[0-9a-zA-Z][0-9a-zA-Z\_\-\.\+]+[0-9a-zA-Z]@[0-9a-zA-Z][0-9a-zA-Z\_\-]*[0-9a-zA-Z](\.[a-zA-Z]{2,6}){1,2}$/;
+                
+                    //var reg1 = new regexp(regstr);
+                    if (!regstr.test(email)) {
+                        alert("잘못된 이메일 주소입니다.1");
+                        EmailID.focus();
+                        return false;
+                    }
+                    //var emailid = emailid.value;
+                    //var emailaddress = emailAddress.value;
+        
+                    //var invalidChars = "\"|&;<>!*\'\\";
+                    //for (var i = 0; i < invalidChars.length; i++) {
+                    //    if (email.indexOf(invalidChars.charAt) != -1) {
+                    //        alert("잘못된 이메일 주소입니다.1");
+                    //        EmailID.focus();
+                    //        return false;
+                    //    }
+                    //}
+        
+                    //if (email.indexOf("@") == -1) {
+                    //    alert("잘못된 이메일 주소입니다. '@'가 없습니다.2");
+        
+                    //    return false;
+                    //}
+        
+                    //if (email.indexOf(" ") != -1) {
+                    //    alert("잘못된 이메일 주소입니다.3");
+                    //    EmailID.focus();
+                    //    return false;
+                    //}
+                    //if (window.RegExp) {
+                    //    var reg1str = "(@.*@)|(\\.\\.)|(@\\.)|(\\.@)|(^\\.)";
+                    //    var reg2str = "^.+\\@(\\[?)[a-zA-Z0-9\\-\\.]+\\.([a-zA-Z]{2,3}|[0-9]{1,3})(\\]?)$";
+                    //    var reg1 = new RegExp(reg1str); 
+                    //    var reg2 = new RegExp(reg2str);
+                    //    //if (reg1.test(email) || !reg2.test(email)) {
+                    //    //    alert("잘못된 이메일 주소입니다.");
+                    //    //    EmailID.focus();
+                    //    //    return false;
+                    //   // }
+                    //    if (reg1.test(emailAdress) || !reg2.test(email)) {
+                    //        alert("잘못된 이메일 주소입니다.4");
+                    //        EmailID.focus();
+                    //        return false;
+                    //    }
+                    //}
+                    return true;
+                }
+        
+                //- 컨트롤 데이터 체크
+                function checkObject(obj, sMsg) {
+        
+                    if (trim(obj.value) == "") {
+                        alert(sMsg);
+                        obj.focus();
+                        return false;
+                    }
+                    return true;
+                }
+        
+                //- 컨트롤 데이터 체크
+                function checkObject2(obj, sMsg) {
+        
+                    if (trim(obj.value) == "") {
+                        alert(sMsg);
+                        obj.focus();
+                        return false;
+                    }
+                    return true;
+                }
+        
+                //- 컨트롤 데이터 길이체크
+                function checkObjectLength(obj, len, sMsg) {
+                    if (obj.value.length < len) {
+                        alert(sMsg);
+                        obj.focus();
+                        return false;
+                    }
+                    return true;
+                }
+                //- 앞뒤 공백 삭제
+                function trim(str) {
+                    //정규 표현식을 사용하여 화이트스페이스를 빈문자로 전환
+                    str = str.replace(/^\s*/, '').replace(/\s*$/, '');
+                    return str; //변환한 스트링을 리턴.
+                }
+        
+                //- 주소삭제
+                function AddressDelete() {
+                    document.getElementById("ContentPlaceHolder1_tbxZipCode").value = "";
+                    document.getElementById("ContentPlaceHolder1_tbxAddrDong").value = "";
+                    document.getElementById("ContentPlaceHolder1_tbxAddrBunji").value = "";
+                    document.getElementById("ContentPlaceHolder1_tbxAddrEtc").value = "";
+                }
+        
+                //- 주소검색
+                function SearchAddr2() {
+                    var CompanyID = document.getElementById("ContentPlaceHolder1_hdCompanyID").value;
+        
+                    NewWindow("../Popup/ZipCodeSearch.aspx?CompanyID=" + CompanyID + "&ConnectChannel=WEB", "New", 800, 600, "yes");
+                }
+        
+                //- 주소 Set
+                function SetAddress(Address) {
+        
+                    var sjAddress = JSON.parse(Address);
+        
+                    document.getElementById("ContentPlaceHolder1_tbxZipCode").value = sjAddress.ZipCode;
+                    document.getElementById("ContentPlaceHolder1_hdZipCode").value = sjAddress.ZipCode;
+                    document.getElementById("ContentPlaceHolder1_hdAddrSeq").value = "";
+                    var AddrDong = sjAddress.Sido + " " + sjAddress.GuGun;
+                    if (sjAddress.Dong.search("읍") > -1 || sjAddress.Dong.search("면") > -1)
+                        AddrDong = AddrDong + " " + sjAddress.Dong;
+                    document.getElementById("ContentPlaceHolder1_tbxAddrDong").value = AddrDong;
+                    document.getElementById("ContentPlaceHolder1_hdAddrDong").value = AddrDong;
+        
+                    var buildingNo = sjAddress.BuildingNo;
+                    if (sjAddress.BuildingSeq != "" && sjAddress.BuildingSeq != "0")
+                        buildingNo = buildingNo + "-" + sjAddress.BuildingSeq;
+                    document.getElementById("ContentPlaceHolder1_tbxAddrBunji").value = sjAddress.RoadName + " " + buildingNo;
+                    document.getElementById("ContentPlaceHolder1_tbxAddrEtc").value = sjAddress.AddressEtc + " " + sjAddress.AddressDetail;
+        
+        
+        
+                }
+        
+                //- 모델명 Set
+                function SetModelName(ModelName, ProductNo, Group1st, Group2nd, Group3rd) {
+        
+                    document.getElementById("ContentPlaceHolder1_hdModelName").value = ModelName //- 제품명
+                    document.getElementById("ContentPlaceHolder1_tbxModelName").value = ModelName //- 제품명
+                    document.getElementById("ContentPlaceHolder1_hdProductNo").value = ProductNo; //- 제품 번호
+                    document.getElementById("ContentPlaceHolder1_hdGroup1st").value = Group1st; //- 대분류
+                    document.getElementById("ContentPlaceHolder1_hdGroup2nd").value = Group2nd; //- 중분류
+                    document.getElementById("ContentPlaceHolder1_hdGroup3rd").value = Group3rd; //- 소분류
+                }
+        
+                //- 이메일
+                function EmailChange() {
+                    var tbxEmailAddress = document.getElementById("ContentPlaceHolder1_tbxEmail2");
+                    var ddlEmail = document.getElementById("ContentPlaceHolder1_ddlEmail");
+        
+                    tbxEmailAddress.value = ddlEmail.value;
+                    tbxEmailAddress.readOnly = ddlEmail.value == "" ? false : true;
+                }
+        
+                //- Step6페이지로 이동
+                function saveASInformation(MenuName, SubMenuName, LinkKey) {
+                    location.href = '/AS/ASReceiveStep6.aspx?MenuName=' + MenuName + '&SubMenuName=' + SubMenuName + '&LinkKey=' + LinkKey;
+                }
+        
+                //- A/S 접수 저장
+                function checkSave() {
+                    var chk = confirm("정품등록을 진행하시겠습니까?");
+                    var confirmFlag = document.getElementById("ContentPlaceHolder1_hdRegistFlag");
+        
+                    if (chk == true) {
+                        confirmFlag.value = "true";
+                      
+                    }
+                    else {
+        
+                        confirmFlag.value = "false";
+                    }
+                }
+            </script>
+        </div>
+        <!-- // 컨텐츠 영역 -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="copyright-area">
+                    <h6>
+                        <span class="a11y-text">Belkin</span>
+                    </h6>
+                    <p class="text-copyright">2017 Belkin of Korea Co.Ltd. All Right Reserved</p>
+                    <div class="sns-lists">
+                        <div class="sns-item">
+                            <a href="#">
+                                <img src="assets/images/icon_naver.png" alt="Naver" width="36" />
+                            </a>
+                        </div>
+                        <div class="sns-item">
+                            <a href="#">
+                                <img src="assets/images/icon_instagram.png" alt="Naver" width="40" />
+                            </a>
+                        </div>
+                        <div class="sns-item">
+                            <a href="#">
+                                <img src="assets/images/icon_facebook.png" alt="Naver" width="40" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-center-area">
+                    <dl>
+                        <dt>벨킨 공식 서비스센터</dt>
+                        <dd>1544-1011</dd>
+                    </dl>
+                    <div class="button-group">
+                        <button type="button" class="button-white-outline">벨킨 공식 홈페이지 바로가기</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

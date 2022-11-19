@@ -1,0 +1,213 @@
+@import '_mixin.scss';
+
+.form-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    @include desktop-min {
+        display: block;
+    }
+    & + .form-grid-container {
+        margin-top: 32px;
+        @include desktop-min {
+            margin-top: 40px;
+        }
+    }
+    .button-belkin {
+        width: 100%;
+        height: 60px;
+        min-width: auto;
+        font-size: 16px;
+        @include tablet-min {
+            font-size: 15px;
+            padding: 0;
+        }
+        @include mobile-max {
+            font-size: 13px;
+            height: 48px;
+        }
+    }
+    .grid-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include desktop-min {
+            min-height: 60px;
+            & + .grid-item {
+                margin-top: 16px;
+            }
+        }
+        @include mobile-max {
+            display: block;
+            width: 100%;
+        }
+        &.only-form {
+            grid-column: 1 / -1;
+        }
+        .grid-label {
+            width: 140px;
+            flex: none;
+            font-weight: bold;
+            @include mobile-max {
+                width: 100%;
+                margin-bottom: 8px;
+            }
+        }
+        .grid-form {
+            width: 100%;
+        }
+    }
+}
+.ui-input {
+    width: 100%;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #ECEEF2;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    outline: 0;
+    border-radius: 12px;
+    padding: 0 20px;
+    font-size: initial;
+    &::placeholder {
+        color: #CECECE;
+        font-size: initial;
+        @include tablet-min {
+            font-size: 15px;
+        }
+        @include mobile-max {
+            font-size: 13px;
+            height: 48px;
+        }
+    }
+    &:focus {
+        border: 1px solid $color-belkin;
+    }
+    @include tablet-min {
+        font-size: 15px;
+    }
+    @include mobile-max {
+        font-size: 13px;
+        height: 48px;
+    }
+}
+.ui-input {
+    &:read-only, &:disabled {
+        background: #F5F5F5;
+    }
+}
+.ui-search-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .button-belkin {
+        width: 28%;
+        padding: 0;
+    }
+    .ui-input {
+        width: 68%;
+    }
+}
+.ui-tel-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .ui-input {
+        width: 31%;
+    }
+}
+.ui-email-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .cell-mail {
+        width: 40%;
+    }
+    .cell-url {
+        width: 54%;
+    }
+    .cell-at {
+        width: 4%;
+        text-align: center;
+    }
+    & + .ui-select {
+        margin-top: 8px;
+    }
+}
+.ui-address-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & + .ui-address-input {
+        margin-top: 8px;
+        justify-content: flex-start;
+    }
+    .cell-zipcode {
+        width: 20%;
+    }
+    .cell-dong {
+        width: 60%;
+        @include desktop-min {
+            width: 52%;
+        }
+    }
+    .cell-find {
+        width: 16%;
+        @include desktop-min {
+            width: 24%;
+        }
+    }
+    .cell-bunji, .cell-etc {
+        width: 40.5%;
+        @include desktop-min {
+            width: 100%;
+        }
+    }
+    .cell-etc {
+        margin-left: 1%;
+    }
+}
+.form-agree-container {
+    text-align: right;
+    .form-agree {
+        & + .form-agree {
+            margin-top: 8px;
+        }
+        p {
+            margin: 8px 0 16px 0;
+        }
+        .agree-notice {
+            margin-top: 16px;
+            font-size: 14px;
+            color: #BABABA;
+            @include mobile-max {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+    @include mobile-max {
+        text-align: left;
+    }
+}
+.form-policy {
+    margin: 80px 0;
+    overflow-y: scroll;
+    height: 345px;
+    padding: 40px;
+    border: 1px solid #ECEEF2;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+.submit-container {
+    text-align: center;
+    margin-top: 60px;
+    .button-belkin {
+        width: 325px;
+    }
+    @include mobile-max {
+        .button-belkin {
+            width: 100%;
+        }
+    }
+}

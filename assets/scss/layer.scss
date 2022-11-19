@@ -1,0 +1,80 @@
+@import '_mixin.scss';
+#layerPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+    z-index: 1000;
+    line-height: 0;
+    white-space: nowrap;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 0;
+    overflow-y: scroll;
+    .layer {
+        display: inline-block;
+        vertical-align: middle;
+        background: #fff;
+        padding: 48px 60px;
+        margin: 20px;
+        z-index: 10;
+        white-space: normal;
+        @include tablet-min {
+            padding: 40px 24px;
+        }
+    }
+    .search-container {
+        padding: 0 10%;
+        margin-bottom: 24px;
+        .ui-subject {
+            width: 72%;
+            @include tablet-min {
+                width: 68%;
+            }
+        }
+        .search-button {
+            width: 26%;
+            button {
+                min-width: auto;
+            }
+            @include tablet-min {
+                width: 30%;
+            }
+            @include mobile-max {
+                margin: 0;
+            }
+        }
+        @include tablet-max {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .search-product-lists {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+        li {
+            word-break: break-all;
+        }
+        @include mobile-max {
+            grid-template-columns: 1fr 1fr;
+        }
+        button {
+            padding: 16px 0;
+        }
+        img {
+            max-width: 100%;
+        }
+        .txt {
+            font-weight: bold;
+            font-size: 16px;
+            @include mobile-max {
+                font-size: 14px;
+            }
+        }
+    }
+}

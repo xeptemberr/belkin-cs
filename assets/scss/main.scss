@@ -27,9 +27,21 @@
             opacity: 0;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-start;
+            a {
+                & + a {
+                    margin-left: 16px;
+                }
+            }
             @include mobile-max {
                 margin-top: 30px;
+                display: block;
+                a {
+                    width: 100%;
+                    & + a {
+                        margin: 8px 0 0 0;
+                    }
+                }
             }
         }
     }

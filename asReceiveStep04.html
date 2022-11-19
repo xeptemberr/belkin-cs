@@ -25,10 +25,10 @@
                         <li>
                             <a href="aboutIntro.html">한국벨킨 고객지원</a>
                         </li>
-                        <li class="is-active">
+                        <li>
                             <a href="orderReceiveStep01.html">정품등록 접수</a>
                         </li>
-                        <li>
+                        <li class="is-active">
                             <a href="asReceiveProductGuide.html">온라인 AS 접수</a>
                         </li>
                         <li>
@@ -46,24 +46,35 @@
         <div id="container">
             <div class="title-page">
                 <div class="inner">
-                    <h3 class="title-page-top">정품등록 접수</h3>
+                    <h3 class="title-page-top">온라인 AS 접수</h3>
                 </div>
             </div>
             <div class="ui-sub-menu">
                 <div class="inner">
                     <ul>
-                        <li class="is-active"><a href="orderReceiveStep01.html">정품등록 접수</a></li>
-                        <li><a href="orderReceiveLists.html">정품등록 확인</a></li>
+                        <li><a href="asReceiveProductGuide.html">온라인 AS 접수 가능 제품 안내</a></li>
+                        <li class="is-active"><a href="asReceiveStep01.html">온라인 AS 접수</a></li>
+                        <li><a href="asReceiveLists.html">AS 접수내역 확인</a></li>
                     </ul>
                 </div>
             </div>
             <div id="contents">                 
                 <div class="inner">
                     <section class="contents-section">
-                        <h3 class="title-round-belkin"><span>정품 등록을 하실 제품군을 선택해주세요</span></h3>
+                        <h4 class="title-contents">온라인 AS 증상확인</h4>
+                        <ul class="list-bullet">
+                            <li>
+                                케이블 피복이 손상된 경우에는 합선 등 안전사고가 발생할 수 있으므로 사용을 즉시 중지하시고 A/S 문의를 해 주시기 바랍니다.
+                            </li>
+                            <li>
+                                <strong>외부 충격 (낙하, 찍힘, 반려동물에 의한 파손 등)에 의한 파손은 고객과실 사유에 해당되므로 A/S 가 불가능한 점 양해 부탁 드립니다.</strong>
+                            </li>
+                        </p>
+                    </section>
+                    <section class="contents-section">
                         <ul class="register-step type-button">
-                            <li class="register-step-item">
-                                <a href="orderReceiveStep03.html">
+                            <li class="register-step-item is-active">
+                                <button type="button">
                                     <div class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none">
                                             <path
@@ -81,10 +92,10 @@
                                         </svg>
                                     </div>
                                     <div class="txt">케이블</div>
-                                </a>
+                                </button>
                             </li>
-                            <li class="register-step-item">
-                                <a href="orderReceiveStep03.html">
+                            <li class="register-step-item is-disabled">
+                                <button type="button">
                                     <div class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none">
                                             <rect class="fill" width="26.044" height="5.557" fill="#68C942" rx="2" transform="matrix(.70991 -.7043 .70846 .70575 5 48.078)"/>
@@ -94,65 +105,63 @@
                                             <rect class="fill" width="29.557" height="19.478" fill="#68C942" rx="4" transform="matrix(.71707 .697 -.70121 .71296 26.742 8.975)"/></svg>
                                     </div>
                                     <div class="txt">충전기</div>
-                                </a>
+                                </button>
                             </li>
-                            <li class="register-step-item">
-                                <a href="orderReceiveStep03.html">
+                            <li class="register-step-item is-disabled">
+                                <button type="button">
                                     <div class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none">
                                             <path class="fill" fill="#68C942" fill-rule="evenodd" d="M22.027 7.517A2 2 0 0 1 23.967 6h10.65a2 2 0 0 1 1.94 1.517l1.636 6.573h.352a4.5 4.5 0 0 1 4.5 4.5v1.972h1.782c.207 0 .375.168.375.375v7.88a.375.375 0 0 1-.375.374h-1.782V41.41a4.5 4.5 0 0 1-4.5 4.5h-.352l-1.636 6.573A2 2 0 0 1 34.617 54H23.967a2 2 0 0 1-1.94-1.517L20.39 45.91H19.5a4.5 4.5 0 0 1-4.5-4.5V18.59a4.5 4.5 0 0 1 4.5-4.5h.89l1.637-6.573ZM18 18.375c0-1.035.84-1.875 1.875-1.875h18.75c1.035 0 1.875.84 1.875 1.875v23.25c0 1.035-.84 1.875-1.875 1.875h-18.75A1.875 1.875 0 0 1 18 41.625v-23.25Z" clip-rule="evenodd"/>
                                         </svg>
                                     </div>
                                     <div class="txt">애플워치</div>
-                                </a>
+                                </button>
                             </li>
-                            <li class="register-step-item">
-                                <a href="orderReceiveStep03.html">
+                            <li class="register-step-item is-disabled">
+                                <button type="button">
                                     <div class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none">
                                             <path class="fill" fill="#76D850" d="M44 6H16c-2.76 0-5 2.225-5 4.966V48.71c0 2.741 2.24 4.966 5 4.966h28c2.76 0 5-2.225 5-4.966V10.966C49 8.225 46.76 6 44 6ZM30 51.69c-1.66 0-3-1.331-3-2.98s1.34-2.98 3-2.98 3 1.331 3 2.98-1.34 2.98-3 2.98Zm15-7.946H15V11.959h30v31.785Z"/>
                                         </svg>
                                     </div>
                                     <div class="txt">태블릿/키보드</div>
-                                </a>
+                                </button>
                             </li>
-                            <li class="register-step-item">
-                                <a href="orderReceiveStep03.html">
+                            <li class="register-step-item is-disabled">
+                                <button type="button">
                                     <div class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none">
                                             <path class="fill" fill="#68C942" fill-rule="evenodd" d="M15 9.929A3.929 3.929 0 0 1 18.929 6h22.345a3.929 3.929 0 0 1 3.928 3.929V50.07A3.929 3.929 0 0 1 41.274 54H18.929A3.929 3.929 0 0 1 15 50.071V9.93Zm3.236 1.457c0-.592.48-1.071 1.072-1.071h2.943l1.918 4.315h11.865l1.438-4.315h3.423c.592 0 1.072.48 1.072 1.071v37.767c0 .592-.48 1.072-1.072 1.072H19.308c-.592 0-1.072-.48-1.072-1.072V11.386Z" clip-rule="evenodd"/>
                                         </svg>
                                     </div>
                                     <div class="txt">케이스/피트니스</div>
-                                </a>
+                                </button>
                             </li>
-                            <li class="register-step-item">
-                                <a href="orderReceiveStep03.html">
+                            <li class="register-step-item is-disabled">
+                                <button type="button">
                                     <div class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none">
                                             <path class="fill" fill="#68C942" fill-rule="evenodd" d="M53.421 18.723c0 7.027-5.696 12.723-12.722 12.723-.776 0-1.535-.07-2.273-.203l-7.28 7.28c.197.887.3 1.808.3 2.754C31.446 48.304 25.75 54 18.723 54c-2.777 0-5.346-.89-7.437-2.399l6.573-6.573a2.313 2.313 0 0 0-3.272-3.272L8.085 48.26A12.664 12.664 0 0 1 6 41.277c0-7.027 5.696-12.723 12.723-12.723 1.036 0 2.044.124 3.008.358l6.722-6.723a12.734 12.734 0 0 1-.477-3.466C27.976 11.696 33.672 6 40.699 6c2.727 0 5.254.858 7.325 2.32l-6.846 6.846a2.313 2.313 0 1 0 3.272 3.271l6.81-6.81a12.663 12.663 0 0 1 2.161 7.096Z" clip-rule="evenodd"/>
                                         </svg>
                                     </div>
                                     <div class="txt">기타</div>
-                                </a>
+                                </button>
                             </li>
                         </ul>
                     </section>
-                    <section class="contents-section receive-agree-section">
-                        <h4 class="title-contents">정품등록 접수</h4>
-                        <ul class="list-bullet">
-                            <li>
-                                충전기+케이블 세트 상품의 경우 제품군은 충전 제품으로 선택해 주시기 바랍니다.
-                            </li>
-                           <li>
-                            한 건당 한 개의 제품만 등록 가능하며, 다수의 제품을 등록하시는 경우에는 동일한 고객명/연락처/이메일 정보로 등록해 주시면 됩니다.
-                            <br>
-                                (각 항목별 띄어쓰기 및 오타 등에 유의 바랍니다.)
-                            </li>
-                            <li>
-                                검색되지 않는 제품은 벨킨 고객센터 1544-1011로 문의 주십시오.
-                            </li>
-                        </p>
+                    <section class="contents-section">
+                        <h3 class="title-round-belkin"><span>AS를 신청하시는 제품의 증상을 아래 항목에서 선택해주세요</span></h3>
+                        <div class="as-receive-reasons">
+                            <button type="submit" name="ctl00$ContentPlaceHolder1$dlSymptomList$ctl00$btnProductSymptom" value="케이블 피복이 손상되거나 충전단자(커넥터)가 파손됨" id="ContentPlaceHolder1_dlSymptomList_btnProductSymptom_0" class="button-white" onclick="window.location.href='asReceiveStep05.html'">
+                                케이블 피복이 손상되거나 충전단자(커넥터)가 파손됨
+                            </button>
+                            <button type="submit" name="ctl00$ContentPlaceHolder1$dlSymptomList$ctl01$btnProductSymptom" value="외관에 이상이 없으나 인식률 저하" id="ContentPlaceHolder1_dlSymptomList_btnProductSymptom_1" class="button-white" onclick="window.location.href='asReceiveStep05.html'">
+                                외관에 이상이 없으나 인식률 저하
+                            </button>
+                            <button type="submit" name="ctl00$ContentPlaceHolder1$dlSymptomList$ctl02$btnProductSymptom" value="기타" id="ContentPlaceHolder1_dlSymptomList_btnProductSymptom_2" class="button-white" onclick="window.location.href='asReceiveStep05.html'">
+                                기타
+                            </button>
+                        </div>
                     </section>
                 </div>
             </div>

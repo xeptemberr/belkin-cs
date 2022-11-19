@@ -60,13 +60,23 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+#mainSlider .main-slider-item .button-group a + a {
+  margin-left: 16px;
 }
 @media only screen and (max-width: 520px) {
   #mainSlider .main-slider-item .button-group {
     margin-top: 30px;
+    display: block;
+  }
+  #mainSlider .main-slider-item .button-group a {
+    width: 100%;
+  }
+  #mainSlider .main-slider-item .button-group a + a {
+    margin: 8px 0 0 0;
   }
 }
 #mainSlider .main-title {

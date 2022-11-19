@@ -21,6 +21,9 @@
 .title-with-line {
     @include title-with-line()
 }
+.title-layer {
+    @include title-layer();
+}
 .text-contents {
     @include text-contents();
 }
@@ -33,6 +36,9 @@
 .number-bullet {
     @include number-bullet();
 }
+.check-bullet {
+    @include check-bullet();
+}
 .a11y-text {
     @include a11y-text(); 
 }
@@ -43,6 +49,10 @@
 .button-black {
     @include button-round();
     @include button-black();
+}
+.button-white {
+    @include button-round();
+    @include button-white();
 }
 .button-belkin-outline {
     @include button-round();
@@ -56,8 +66,11 @@
     @include button-round();
     @include button-white-outline();
 }
-.checkbox-wrapper-4 {
+.ui-checkbox {
     @include input-checkbox();
+}
+.ui-checkbox-sm {
+    @include input-checkbox-sm();
 }
 .search-input {
     .search-label {
@@ -67,7 +80,7 @@
 .input[type=text], .input[type=password], .input[type=number] {
     @include input();
 }
-select {
+.ui-select {
     @include select-box();
 }
 .emphasis-belkin {

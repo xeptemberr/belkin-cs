@@ -86,6 +86,30 @@
         font-size: 20px;
     }
 }
+@mixin title-layer {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+        width: 32px;
+        padding: 0;
+        img {
+            max-width: 100%;
+        }
+    }
+    @include desktop-min {
+        font-size: 26px;
+    }
+    @include tablet-min {
+        font-size: 20px;
+    }
+    @include mobile-max {
+        font-size: 18px;
+    }
+}
 @mixin text-contents {
     font-size: 20px;
     line-height: 1.6;
@@ -157,6 +181,9 @@
         }
         @include mobile-max {
             padding-left: 10px;
+            br {
+                display: none;
+            }
         }
         & + li {
             margin-top: 8px;
@@ -197,6 +224,24 @@
         .number {
             position: absolute;
             left: 0;
+        }
+    }
+}
+@mixin check-bullet {
+    li {
+        @include text-contents();
+        position: relative;
+        padding-left: 32px;
+        line-height: 1.8;
+        & + li {
+            margin-top: 4px;
+        }
+        &::before {
+            width: 24px;
+            height: 24px;
+            background: url(../images/icon_checkbox_sm.png) no-repeat center center;
+            background-size: 100%;
+            top: 7px;
         }
     }
 }
@@ -248,6 +293,17 @@
     border: 2px solid #000;
     color: #fff;
 }
+@mixin button-white {
+    font-weight: bold;
+    background: #fff;
+    color: $color-belkin;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    &:hover {
+        background: $color-belkin;
+        color: #fff;
+        opacity: 1;
+    }
+}
 @mixin button-belkin-outline {
     font-weight: bold;
     border: 2px solid $color-belkin;
@@ -297,10 +353,10 @@
         font-size: 13px;
         height: 48px;
     }
-    &::-webkit-input-placeholder,
-    &::placeholder, 
+    &::-moz-placeholder,
     &::-ms-input-placeholder,
-    &::-moz-placeholder {
+    &::-webkit-input-placeholder,
+    &::placeholder {
         color: #cacaca;
         @include tablet-min {
             font-size: 15px;
@@ -374,6 +430,9 @@
             &:last-child {
                 padding-left: 8px;
                 line-height: 18px;
+                @include mobile-max {
+                    max-width: calc(100% - 20px);
+                }
             }
         }
     }
@@ -399,6 +458,83 @@
         user-select: none;
     }
 }
+@mixin input-checkbox-sm {
+    display: inline-block;
+    & + .ui-checkbox-sm {
+        margin-left: 16px;
+    }
+    input[type="checkbox"] {
+        display: none;
+        visibility: hidden;
+        &:checked + .check svg {
+            stroke: $color-belkin;
+            path {
+                stroke-dashoffset: 60;
+                transition: all 0.3s linear;
+            }
+            polyline {
+                stroke-dashoffset: 42;
+                transition: all 0.2s linear;
+                transition-delay: 0.15s;
+            }
+        }
+    }
+    label {
+        display: inline-block;
+    }
+    .check {
+        cursor: pointer;
+        position: relative;
+        margin: auto;
+        height: 18px;
+        -webkit-tap-highlight-color: transparent;
+        transform: translate3d(0, 0, 0);
+        display: flex;
+        align-items: center;
+        .label-text {
+            margin: 0 0 0 8px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(34,50,84,0.03);
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        svg {
+            position: relative;
+            z-index: 1;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke: #c8ccd4;
+            stroke-width: 1.5;
+            transform: translate3d(0, 0, 0);
+            transition: all 0.2s ease;
+            path {
+                stroke-dasharray: 60;
+                stroke-dashoffset: 0;
+            }
+            polyline {
+                stroke-dasharray: 22;
+                stroke-dashoffset: 66;
+            }
+        }
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+            svg {
+                stroke: $color-belkin;
+            }
+        }
+    }
+}
 @-moz-keyframes wave-4 {
     50% {
         transform: scale(0.9);
@@ -421,10 +557,7 @@
 }
 
 @mixin select-box {
-    &::-ms-expand {
-        display: none;
-    }
-    &.select {
+    select {
         -o-appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -438,12 +571,18 @@
         outline: 0 none;
         border: 1px solid #EBEBEB;
         font-size: 16px;
+        &:focus {
+            border-color: $color-belkin;
+        }
         @include tablet-min {
             font-size: 15px;
         }
         @include mobile-max {
             font-size: 13px;
             height: 48px;
+        }
+        ::-ms-expand {
+            display: none;
         }
     }
 }

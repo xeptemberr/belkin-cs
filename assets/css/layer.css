@@ -1,0 +1,116 @@
+/* color */
+/* media-query */
+/* title */
+/* button */
+/* form elements */
+@-webkit-keyframes wave-4 {
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+@keyframes wave-4 {
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+#layerPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  z-index: 1000;
+  line-height: 0;
+  white-space: nowrap;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 0;
+  overflow-y: scroll;
+}
+#layerPopup .layer {
+  display: inline-block;
+  vertical-align: middle;
+  background: #fff;
+  padding: 48px 60px;
+  margin: 20px;
+  z-index: 10;
+  white-space: normal;
+}
+@media only screen and (max-width: 800px) {
+  #layerPopup .layer {
+    padding: 40px 24px;
+  }
+}
+#layerPopup .search-container {
+  padding: 0 10%;
+  margin-bottom: 24px;
+}
+#layerPopup .search-container .ui-subject {
+  width: 72%;
+}
+@media only screen and (max-width: 800px) {
+  #layerPopup .search-container .ui-subject {
+    width: 68%;
+  }
+}
+#layerPopup .search-container .search-button {
+  width: 26%;
+}
+#layerPopup .search-container .search-button button {
+  min-width: auto;
+}
+@media only screen and (max-width: 800px) {
+  #layerPopup .search-container .search-button {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  #layerPopup .search-container .search-button {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #layerPopup .search-container {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+#layerPopup .search-product-lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+#layerPopup .search-product-lists li {
+  word-break: break-all;
+}
+@media only screen and (max-width: 520px) {
+  #layerPopup .search-product-lists {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+#layerPopup .search-product-lists button {
+  padding: 16px 0;
+}
+#layerPopup .search-product-lists img {
+  max-width: 100%;
+}
+#layerPopup .search-product-lists .txt {
+  font-weight: bold;
+  font-size: 16px;
+}
+@media only screen and (max-width: 520px) {
+  #layerPopup .search-product-lists .txt {
+    font-size: 14px;
+  }
+}
