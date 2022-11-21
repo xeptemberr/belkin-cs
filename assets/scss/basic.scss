@@ -1,8 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
+@font-face {
+    font-family: 'YoonGothic';
+    src: url('../fonts/yoon Gothic 320.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/yoon Gothic 320.woff') format('woff'),
+         url('../fonts/yoon Gothic 320.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+  }
+@font-face {
+    font-family: 'YoonGothic';
+    src: url('../fonts/yoon Gothic 350.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/yoon Gothic 350.woff') format('woff'),
+         url('../fonts/yoon Gothic 350.woff2') format('woff2');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Metric';
+    src: url('../fonts/Metric_Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Metric_Regular.woff') format('woff'),
+         url('../fonts/Metric_Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Metric';
+    src: url('../fonts/Metric_Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Metric_Bold.woff') format('woff'),
+         url('../fonts/Metric_Bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: bold;
+}
+
+
 @import '_mixin.scss';
 * {
-    font-family: 'Noto Sans KR', 'Sans-serif'; 
+    font-family: 'Metric', 'YoonGothic'; 
     box-sizing: border-box;
+    letter-spacing: -0.7px;
     @include tablet-min {
         font-size: 16px;
     }

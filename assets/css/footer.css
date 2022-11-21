@@ -42,15 +42,13 @@
   }
 }
 #footer h6 {
-  width: 160px;
-  height: 54px;
-  background: url(../images/logo_footer_160x54.png) no-repeat center center;
+  width: 120px;
+  height: 31px;
+  background: url(../images/logo_footer_120x31.png) no-repeat center center;
   background-size: 100%;
 }
 @media only screen and (max-width: 800px) {
   #footer h6 {
-    width: 140px;
-    height: 34px;
     margin: 0 auto;
   }
 }

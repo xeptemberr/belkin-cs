@@ -266,8 +266,10 @@
             margin: 16px 0 8px;
         }
         li {
+            & + li {
+                margin: 0 0 0 17px;
+            }
             vertical-align: top;
-            margin: 0 17px 0 0;
             padding: 16px;
             font-weight: bold;
             letter-spacing: -0.4px;
@@ -290,6 +292,9 @@
             }
             @include desktop-min {
                 margin: 0 auto;
+                & + li {
+                    margin: 0 auto;
+                }
             }
             @include tablet-max {
                 margin: 0;
@@ -820,5 +825,15 @@
         & + button {
             margin-top: 16px;
         }
+    }
+}
+.receive-products {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    img {
+        width: 24px;
+        display: block;
+        margin-right: 8px;
     }
 }

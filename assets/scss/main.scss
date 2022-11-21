@@ -5,8 +5,11 @@
 }
 #mainSlider {
     height: 618px;
-    @include mobile-max {
-        height: 500px;   
+    background: url(../images/bg_slider.png) no-repeat right center;
+    background-size: auto 100%;
+    overflow: hidden;
+    @include tablet-min {
+        height: auto;
     }
     *:focus {
         outline: none !important;
@@ -14,12 +17,80 @@
     .slick-list, .slick-track {
         height: 100%;
     }
+    .slider-contents {
+        position: absolute;
+        right: 0;
+        top: 0;
+        &.type-image {
+            right: -10%;
+            top: -50%;
+            img {
+                max-width: 100%;
+            }
+        }
+        &.type-video {
+            right: -10vw;
+            top: 20px;
+            width: 37vw;
+            height: 20.8vw;
+            border-radius: 12px;
+            overflow: hidden;
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+            @include desktop-mid {
+                width: 36vw;
+                height: 20.2vw;
+                right: 0;
+                top: 70%;
+            }
+            @include desktop-min {
+                right: 4%;
+                top: 80%;
+                width: 46vw;
+                height: 25.8vw;
+            }
+            @include tablet-min {
+                position: static;
+                width: 100%;
+                height: 50vw;
+                margin: 40px auto;
+            }
+        }
+        @include desktop-min {
+            &.type-image {
+                width: 50%;
+                top: -30%;
+                right: 0;
+            }
+        }
+        @include tablet-min {
+            &.type-image {
+                position: static;
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+    }
     .main-slider-item {
         display: flex;
         align-items: flex-start;
-        justify-content: flex-start;
+        justify-content: center;
         padding-top: 80px;
         box-sizing: border-box;
+        @include tablet-min {
+            padding-top: 0;
+            padding-bottom: 120px;
+        }
+        .inner {
+            position: relative;
+            .title-subtext {
+                @include tablet-min {
+                    margin-top: 24px;
+                }
+            }
+        }
         .button-group {
             margin-top: 80px;
             transition-duration: 0.7s;
@@ -32,6 +103,9 @@
                 & + a {
                     margin-left: 16px;
                 }
+            }
+            @include tablet-min {
+                margin-top: 40px;
             }
             @include mobile-max {
                 margin-top: 30px;
@@ -87,6 +161,9 @@
     @include desktop-min {
         left: inherit;
         margin-left: 0;
+    }
+    @include tablet-min {
+        bottom: 40px;
     }
     @include mobile-max {
         bottom: 32px;   
@@ -209,7 +286,7 @@
                 li {
                     vertical-align: top;
                     margin: 0 20px 30px 0;
-                    padding: 16px;
+                    padding: 14px;
                     font-weight: bold;
                     letter-spacing: -0.4px;
                     line-height: 1.4;

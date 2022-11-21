@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/common.js"></script>
@@ -46,6 +46,9 @@
             <div id="mainSlider">
                 <div class="main-slider-item">
                     <div class="inner">
+                        <div class="slider-contents type-image">
+                            <img src="assets/images/img_slider.png" alt="">
+                        </div>
                         <h3 class="main-title color-belkin">Better with Belkin</h3>
                         <h3 class="main-title">당신의 잠재력을 높여주는 기술</h3>
                         <p class="title-subtext">벨킨 고객지원센터에 오신 것을 환영합니다</p>
@@ -57,13 +60,9 @@
                 </div>
                 <div class="main-slider-item">
                     <div class="inner">
-                        <h3 class="main-title color-belkin">Better with Belkin</h3>
-                        <h3 class="main-title">당신의 잠재력을 높여주는 기술</h3>
-                        <p class="title-subtext">벨킨 고객지원센터에 오신 것을 환영합니다</p>
-                    </div>
-                </div>
-                <div class="main-slider-item">
-                    <div class="inner">
+                        <div class="slider-contents type-video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/oRtvUcqB7ZE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <h3 class="main-title color-belkin">Better with Belkin</h3>
                         <h3 class="main-title">당신의 잠재력을 높여주는 기술</h3>
                         <p class="title-subtext">벨킨 고객지원센터에 오신 것을 환영합니다</p>
@@ -80,40 +79,40 @@
         <section class="main-section flex" id="productRegister">
             <div class="inner">
                 <div class="title-area">
-                    <h4 class="title-toptext" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">정품등록접수</h4>
-                    <h3 class="main-title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out">정품등록하고 <br>전문 A/S 서비스를 <br>받아보세요</h3>
-                    <div class="button-group" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" data-aos-easing="ease-in-out">
+                    <h4 class="title-toptext" data-aos="fade-right">정품등록접수</h4>
+                    <h3 class="main-title" data-aos="fade-right" data-aos-delay="100" data-aos-easing="ease">정품등록하고 <br>전문 A/S 서비스를 <br>받아보세요</h3>
+                    <div class="button-group" data-aos="fade-right" data-aos-delay="150" data-aos-easing="ease">
                         <button type="button" class="button-belkin-outline">정품등록접수 바로가기</button>
                     </div>
                 </div>
                 <div class="contents-area">
                     <ul class="register-step">
-                        <li class="register-step-item" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                        <li class="register-step-item" data-aos="fade-right">
                             <div class="icon"><img src="assets/images/icon_register_step_01.png" alt=""></div>
                             <div class="title-toptext">첫번째</div>
                             <div class="txt">벨킨 고객지원 <br>홈페이지에 접속하기</div>
                         </li>
-                        <li class="register-step-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out">
+                        <li class="register-step-item" data-aos="fade-right" data-aos-delay="100" data-aos-easing="ease">
                             <div class="icon"><img src="assets/images/icon_register_step_02.png" alt=""></div>
                             <div class="title-toptext">두번째</div>
                             <div class="txt">A/S 가능여부 확인하기 <br>-보증기간 및 구매처</div>
                         </li>
-                        <li class="register-step-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out">
+                        <li class="register-step-item" data-aos="fade-right" data-aos-delay="200" data-aos-easing="ease">
                             <div class="icon"><img src="assets/images/icon_register_step_03.png" alt=""></div>
                             <div class="title-toptext">세번째</div>
                             <div class="txt">온라인 A/S 신청하기</div>
                         </li>
-                        <li class="register-step-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" data-aos-easing="ease-in-out">
+                        <li class="register-step-item" data-aos="fade-right" data-aos-delay="300" data-aos-easing="ease">
                             <div class="icon"><img src="assets/images/icon_register_step_04.png" alt=""></div>
                             <div class="title-toptext">네번째</div>
                             <div class="txt">A/S 접수증 이메일 발송받기</div>
                         </li>
-                        <li class="register-step-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" data-aos-easing="ease-in-out">
+                        <li class="register-step-item" data-aos="fade-right" data-aos-delay="400" data-aos-easing="ease">
                             <div class="icon"><img src="assets/images/icon_register_step_05.png" alt=""></div>
                             <div class="title-toptext">다섯번째</div>
                             <div class="txt">A/S 접수 제품 인증 발송받기</div>
                         </li>
-                        <li class="register-step-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out">
+                        <li class="register-step-item" data-aos="fade-right" data-aos-delay="500" data-aos-easing="ease">
                             <div class="icon"><img src="assets/images/icon_register_step_06.png" alt=""></div>
                             <div class="title-toptext">여섯번째</div>
                             <div class="txt">세제품 교환 및 수리받기</div>
@@ -125,29 +124,29 @@
         <section class="main-section flex" id="productFaq">
             <div class="inner">
                 <div class="title-area">
-                    <h4 class="title-toptext" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">자주 묻는 질문</h4>
-                    <h3 class="main-title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out">어떤 내용을 <br>찾고 계신가요?</h3>
-                    <div class="button-group" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" data-aos-easing="ease-in-out">
+                    <h4 class="title-toptext" data-aos="fade-right">자주 묻는 질문</h4>
+                    <h3 class="main-title" data-aos="fade-right" data-aos-delay="100" data-aos-easing="ease">어떤 내용을 <br>찾고 계신가요?</h3>
+                    <div class="button-group" data-aos="fade-right" data-aos-delay="150" data-aos-easing="ease">
                         <button type="button" class="button-belkin-outline">자주 묻는 질문 더보기</button>
                     </div>
                 </div>
                 <div class="contents-area">
                     <ul class="card-faq">
-                        <li class="card-faq-item" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                        <li class="card-faq-item" data-aos="fade-right">
                             <a href="#">
                                 <div class="title-toptext">온라인 AS 관련</div>
                                 <h5>벨킨 무선이어폰 한 쪽만 될 때는 이렇게 하세요</h5>
                                 <p>먼저, 이어버드는 케이스에 넣은 상태로 닫아놓아주시고 기존 스마트폰에서 연결된 블루투스 프로필을 삭제해 주세요.</p>
                             </a>
                         </li>
-                        <li class="card-faq-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out">
+                        <li class="card-faq-item" data-aos="fade-right" data-aos-delay="100" data-aos-easing="ease">
                             <a href="#">
                                 <div class="title-toptext">보증기간</div>
                                 <h5>한번 구매하면  보증기간은 언제까지인가요?</h5>
                                 <p>먼저, 이어버드는 케이스에 넣은 상태로 닫아놓아주시고 기존 스마트폰에서 연결된 블루투스 프로필을 삭제해 주세요.</p>
                             </a>
                         </li>
-                        <li class="card-faq-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out">
+                        <li class="card-faq-item" data-aos="fade-right" data-aos-delay="200" data-aos-easing="ease">
                             <a href="#">
                                 <div class="title-toptext">제품별 증상 및 해결법</div>
                                 <h5>갑자기 이상한 소리가 나면서 계속 끊겨요</h5>
@@ -161,42 +160,42 @@
         <section class="main-section" id="productNotice">
             <div class="inner">
                 <div class="title-area">
-                    <h4 class="title-toptext"  data-aos="fade-up" data-aos-duration="1000"  data-aos-easing="ease-in-out">공지사항</h4>
-                    <h3 class="main-title"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out">벨킨 서비스센터의 새로운 공지를 확인해보세요</h3>
+                    <h4 class="title-toptext"  data-aos="fade-up"  data-aos-easing="ease">공지사항</h4>
+                    <h3 class="main-title"  data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease">벨킨 서비스센터의 새로운 공지를 확인해보세요</h3>
                 </div>
                 <div class="contents-area">
                     <div class="latest-notice-lists">
-                        <div class="latest-notice-item" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                        <div class="latest-notice-item" data-aos="fade-up">
                             <a href="#">
                                 정품등록 자주하는 질문(Q&A) 모음
                             </a>
                             <div class="register-date">2022.06.17</div>
                         </div>
-                        <div class="latest-notice-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out">
+                        <div class="latest-notice-item" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease">
                             <a href="#">
                                 벨킨 강화유리 필름 A/S 기준 업데이트 안내
                             </a>
                             <div class="register-date">2022.06.17</div>
                         </div>
-                        <div class="latest-notice-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out">
+                        <div class="latest-notice-item" data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease">
                             <a href="#">
                                 벨킨 정품 인증 방법 변경 안내
                             </a>
                             <div class="register-date">2022.06.17</div>
                         </div>
-                        <div class="latest-notice-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-easing="ease-in-out">
+                        <div class="latest-notice-item" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease">
                             <a href="#">
                                 아마존 등 해외 직구 제품의 A/S 불가에 대한 안내
                             </a>
                             <div class="register-date">2022.06.17</div>
                         </div>
-                        <div class="latest-notice-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-easing="ease-in-out">
+                        <div class="latest-notice-item" data-aos="fade-up" data-aos-delay="400" data-aos-easing="ease">
                             <a href="#">
                                 벨킨 트루클리어프로 강화유리 제품 교환 절차 안내
                             </a>
                             <div class="register-date">2022.06.17</div>
                         </div>
-                        <div class="latest-notice-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out">
+                        <div class="latest-notice-item" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease">
                             <a href="#">
                                 팝업 차단을 해제 후 A/S 접수 가능
                             </a>
@@ -204,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="button-group" class="latest-notice-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-easing="ease-in-out">
+                <div class="button-group" class="latest-notice-item" data-aos="fade-up" data-aos-delay="600" data-aos-easing="ease">
                     <button class="button-black-outline">공지사항 더보기</button>
                 </div>
             </div>
@@ -246,6 +245,12 @@
             </div>
         </footer>
         <div class="menu-floating">
+            <button type="button" class="button-as">
+                <span class="a11y-text">AS접수</span>
+            </button>
+            <button type="button" class="button-order">
+                <span class="a11y-text">정품등록</span>
+            </button>
             <button type="button" class="button-chatbot">
                 <span class="a11y-text">채팅상담</span>
             </button>
@@ -257,7 +262,10 @@
 <!--// 메인 ui에만 해당되는 스크립트 파일 -->
 <!-- 항상 최하단에 위치 (텍스트 인터랙션 init) -->
 <script>
-AOS.init();
+AOS.init({
+    easing: 'ease',
+    duration: 1000
+});
 </script>
 <!-- // 항상 최하단에 위치 -->
 </html>

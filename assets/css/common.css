@@ -24,7 +24,7 @@
   line-height: 1.2;
   font-weight: bold;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
   .main-title {
     font-size: 40px;
   }
@@ -37,6 +37,7 @@
 @media only screen and (max-width: 520px) {
   .main-title {
     font-size: 24px;
+    word-break: keep-all;
   }
 }
 
@@ -44,7 +45,7 @@
   font-size: 24px;
   font-weight: normal;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
   .title-subtext {
     font-size: 20px;
   }
@@ -57,6 +58,7 @@
 @media only screen and (max-width: 520px) {
   .title-subtext {
     font-size: 15px;
+    word-break: keep-all;
   }
 }
 
@@ -76,7 +78,7 @@
   font-weight: bold;
   text-align: center;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
   .title-page-top {
     font-size: 28px;
   }
@@ -89,6 +91,7 @@
 @media only screen and (max-width: 520px) {
   .title-page-top {
     font-size: 20px;
+    word-break: keep-all;
   }
 }
 
@@ -97,7 +100,7 @@
   margin-bottom: 24px;
   color: #76D850;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
   .title-contents {
     font-size: 20px;
   }
@@ -166,7 +169,7 @@
 .title-layer button img {
   max-width: 100%;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
   .title-layer {
     font-size: 26px;
   }

@@ -20,7 +20,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 100px;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
   .form-grid-container {
     display: block;
   }
@@ -28,7 +28,7 @@
 .form-grid-container + .form-grid-container {
   margin-top: 32px;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
   .form-grid-container + .form-grid-container {
     margin-top: 40px;
   }
@@ -62,7 +62,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
   .form-grid-container .grid-item {
     min-height: 60px;
   }
@@ -272,7 +272,7 @@
 .ui-address-input .cell-dong {
   width: 60%;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
   .ui-address-input .cell-dong {
     width: 52%;
   }
@@ -280,7 +280,7 @@
 .ui-address-input .cell-find {
   width: 16%;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
   .ui-address-input .cell-find {
     width: 24%;
   }
@@ -288,7 +288,7 @@
 .ui-address-input .cell-bunji, .ui-address-input .cell-etc {
   width: 40.5%;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
   .ui-address-input .cell-bunji, .ui-address-input .cell-etc {
     width: 100%;
   }

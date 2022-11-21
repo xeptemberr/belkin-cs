@@ -30,6 +30,12 @@
     }
 }
 
+@mixin desktop-mid {
+    @media only screen and (max-width: #{$desktop-mid}) {
+        @content;
+    }
+}
+
 @mixin desktop-max {
     @media only screen and (max-width: #{$desktop-max}) {
         @content;
@@ -49,6 +55,7 @@
     }
     @include mobile-max {
         font-size: 24px;
+        word-break: keep-all;
     }
 }
 @mixin title-subtext {
@@ -62,6 +69,7 @@
     }
     @include mobile-max {
         font-size: 15px;
+        word-break: keep-all;
     }
 }
 @mixin title-category {
@@ -84,6 +92,7 @@
     }
     @include mobile-max {
         font-size: 20px;
+        word-break: keep-all;
     }
 }
 @mixin title-layer {
