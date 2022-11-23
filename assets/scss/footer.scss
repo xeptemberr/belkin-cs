@@ -32,6 +32,8 @@
     .text-copyright {
         color: #999;
         margin-top: 16px;
+        font-family: 'Metric';
+        letter-spacing: 0;
         @include tablet-min {
             font-size: 14px;
         }

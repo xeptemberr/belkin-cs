@@ -12,13 +12,13 @@
 }
 @font-face {
   font-family: "Metric";
-  src: url("../fonts/Metric_Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Metric_Regular.woff") format("woff"), url("../fonts/Metric_Regular.woff2") format("woff2");
+  src: url("../fonts/Metric-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Metric-Regular.woff") format("woff"), url("../fonts/Metric-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "Metric";
-  src: url("../fonts/Metric_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Metric_Bold.woff") format("woff"), url("../fonts/Metric_Bold.woff2") format("woff2");
+  src: url("../fonts/Metric-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Metric-Bold.woff") format("woff"), url("../fonts/Metric-Bold.woff2") format("woff2");
   font-style: normal;
   font-weight: bold;
 }
@@ -40,7 +40,7 @@
   }
 }
 * {
-  font-family: "Metric", "YoonGothic";
+  font-family: "YoonGothic";
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   letter-spacing: -0.7px;

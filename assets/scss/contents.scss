@@ -135,7 +135,7 @@
     .about-intro-contents {
         @include tablet-max {
             display: block;
-            text-align: center;
+            text-align: left;
         }
         .img {
             @include desktop-min {
@@ -504,6 +504,19 @@
     }
     .receive-agree-section {
         position: relative;
+        &.online-as-agree-section {
+            .button-group {
+                top: -15px;
+                @include tablet-min {
+                    position: static;
+                    text-align: center;
+                    margin-top: 40px;
+                }
+                @include mobile-max {
+                    margin-top: 24px;
+                }
+            }
+        }
         .agree-check {
             text-align: right;
             margin-top: 8px;
@@ -519,6 +532,9 @@
                 position: static;
                 text-align: center;
                 margin-top: 40px;
+            }
+            @include mobile-max {
+                margin-top: 24px;
             }
         }
     }
@@ -870,22 +886,11 @@
             width: 24px;
             height: 24px;
             text-align: center;
-            line-height: 24px;
+            line-height: 25px;
             color: #fff;
             font-weight: bold;
             background: $color-belkin;
             border-radius: 100%;
-        }
-    }
-}
-.online-as-agree-section {
-    .agree-container {
-        text-align: right;
-    }
-    .agree-check {
-        margin-top: 8px;
-        @include tablet-min {
-            text-align: left;
         }
     }
 }

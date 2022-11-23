@@ -60,10 +60,9 @@
             </div>
             <div id="contents">                 
                 <div class="inner">
-                    <section class="contents-section online-as-agree-section">
+                    <section class="contents-section receive-agree-section online-as-agree-section">
                         <h4 class="title-contents">온라인 AS 접수</h4>
                         <div class="agree-container">
-                            <div class="button-group"><a href="asReceiveStep02.html" class="button-belkin">온라인 A/S 접수</a></div>
                             <div class="agree-check">
                                 <div class="ui-checkbox">
                                     <input class="inp-cbx" id="ContentPlaceHolder1_chkASAgree" name="ctl00$ContentPlaceHolder1$chkASAgree" type="checkbox"/>
@@ -82,6 +81,7 @@
                                     </svg>
                                 </div>
                             </div>
+                            <div class="button-group"><a href="asReceiveStep02.html" class="button-belkin">온라인 A/S 접수</a></div>
                         </div>
                     </section>
                     <section class="contents-section receive-announcement">
@@ -195,10 +195,10 @@
             </div>
         </footer>
         <div class="menu-floating">
-            <button type="button" class="button-as">
+            <button type="button" class="button-as" onclick="window.location.href='asReceiveStep01.html'">
                 <span class="a11y-text">AS접수</span>
             </button>
-            <button type="button" class="button-order">
+            <button type="button" class="button-order" onclick="window.location.href='orderReceiveStep01.html'">
                 <span class="a11y-text">정품등록</span>
             </button>
             <button type="button" class="button-chatbot" name="ctl00$btnChatting" id="btnChatting">
