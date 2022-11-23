@@ -24,10 +24,17 @@
         @include tablet-min {
             padding: 40px 24px;
         }
+        @include mobile-max {
+            padding: 24px 12px;
+        }
     }
     .search-container {
         padding: 0 10%;
         margin-bottom: 24px;
+        @include tablet-min {
+            gap: 8px;
+            margin: 16px 0;
+        }
         .ui-subject {
             width: 72%;
             @include tablet-min {
@@ -38,6 +45,9 @@
             width: 26%;
             button {
                 min-width: auto;
+                @include tablet-min {
+                    padding: 0;
+                }
             }
             @include tablet-min {
                 width: 30%;

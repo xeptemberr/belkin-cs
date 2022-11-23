@@ -44,9 +44,20 @@
     padding: 40px 24px;
   }
 }
+@media only screen and (max-width: 520px) {
+  #layerPopup .layer {
+    padding: 24px 12px;
+  }
+}
 #layerPopup .search-container {
   padding: 0 10%;
   margin-bottom: 24px;
+}
+@media only screen and (max-width: 800px) {
+  #layerPopup .search-container {
+    gap: 8px;
+    margin: 16px 0;
+  }
 }
 #layerPopup .search-container .ui-subject {
   width: 72%;
@@ -61,6 +72,11 @@
 }
 #layerPopup .search-container .search-button button {
   min-width: auto;
+}
+@media only screen and (max-width: 800px) {
+  #layerPopup .search-container .search-button button {
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 800px) {
   #layerPopup .search-container .search-button {

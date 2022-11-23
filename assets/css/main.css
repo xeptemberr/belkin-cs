@@ -594,6 +594,7 @@
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   word-break: break-all;
+  list-style: 22px;
 }
 @media only screen and (max-width: 800px) {
   .main-section#productFaq .card-faq .card-faq-item a p {

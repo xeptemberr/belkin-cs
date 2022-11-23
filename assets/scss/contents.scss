@@ -270,7 +270,7 @@
                 margin: 0 0 0 17px;
             }
             vertical-align: top;
-            padding: 16px;
+            padding: 14px;
             font-weight: bold;
             letter-spacing: -0.4px;
             line-height: 1.4;
@@ -638,6 +638,84 @@
                 padding: 10% 10px;
                 text-align: center;
                 display: block;
+            }
+        }
+    }
+    .board-detail {
+        .board-header {
+            border-top: 1px solid $color-belkin;
+            border-bottom: 1px solid #ebebeb;
+            padding: 40px 0;
+            .detail-subject {
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 1.4;
+                @include tablet-max {
+                    font-size: 18px;
+                }
+                @include mobile-max {
+                    font-size: 16px;
+                }
+            }
+            @include tablet-max {
+                padding: 20px 0;
+            }
+        }
+        .detail-info {
+            font-weight: normal;
+            font-size: 16px;
+            margin-top: 32px;
+            .list-item {
+                & + .list-item {
+                    margin-top: 12px;
+                    @include mobile-max {
+                        margin-top: 8px;
+                    }
+                    a {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            @include tablet-max {
+                margin-top: 16px;
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 32px;
+                @include mobile-max {
+                    display: block;
+                }
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 16px;
+                    @include mobile-max {
+                        gap: 0;
+                    }
+                    span {
+                        font-weight: bold;
+                        @include mobile-max {
+                            width: 80px;
+                        }
+                    }
+                    @include mobile-max {
+                        & + li {
+                            margin-top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        .board-body {
+            padding: 32px 0;
+            white-space: pre-line;
+            line-height: 1.6;
+            border-bottom: 1px solid $color-belkin;
+            @include tablet-max {
+                padding: 16px 0;
             }
         }
     }

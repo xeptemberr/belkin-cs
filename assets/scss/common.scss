@@ -93,6 +93,14 @@
     text-align: center;
     font-size: 0;
     margin-top: 60px;
+    &.type-detail {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include mobile-max {
+            margin-top: 24px;
+        }
+    }
     button {
         width: 48px;
         height: 48px;
@@ -137,6 +145,16 @@
         }
         &.pagination-last {
             background-image: url('../images/icon_pagination_last.png');
+        }
+        &.pagination-board-prev {
+            background-image: url('../images/icon_prev.png');
+        }
+        &.pagination-board-next {
+            background-image: url('../images/icon_next.png');
+        }
+        &.pagination-board-list {
+            background-color: #000;
+            background-image: url('../images/icon_list.png');
         }
     }
 }

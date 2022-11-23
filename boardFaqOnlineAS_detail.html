@@ -52,8 +52,8 @@
             <div class="ui-sub-menu">
                 <div class="inner">
                     <ul>
-                        <li><a href="boardFaqOnlineAS.html">온라인 AS 관련</a></li>
-                        <li class="is-active"><a href="boardFaqGuarantee.html">보증기간 관련</a></li>
+                        <li class="is-active"><a href="boardFaqOnlineAS.html">온라인 AS 관련</a></li>
+                        <li><a href="boardFaqGuarantee.html">보증기간 관련</a></li>
                         <li><a href="boardFaqProblem.html">제품별 증상 및 해결법</a></li>
                     </ul>
                 </div>
@@ -61,65 +61,70 @@
             <div id="contents">                 
                 <div class="inner">
                     <section class="contents-section">
-                        <div class="search-container type-subject">
-                            <div class="search-input ui-select">
-                                <select name="ctl00$ContentPlaceHolder1$ddlSearchType" id="ContentPlaceHolder1_ddlSearchType" class="select">
-                                    <option selected="selected" value="Title">제목</option>
-                                    <option value="WriterName">글쓴이</option>
-                                
-                                </select>
-                            </div>
-                            <div class="search-input ui-subject">
-                                <input name="ctl00$ContentPlaceHolder1$txtSearchString" type="text" id="ContentPlaceHolder1_txtSearchString" class="input" onkeypress="if(event.keyCode == 13) {__doPostBack('ctl00$ContentPlaceHolder1$btnSearch',''); return false;}" class="input" placeholder="어떤 내용을 찾고 계신가요?">
-                            </div>
-                            <div class="search-button">
-                                <button type="submit" name="ctl00$ContentPlaceHolder1$ibtnSearch" id="ContentPlaceHolder1_ibtnSearch">검색</button>
-                            </div>
-                        </div>
-                        <div class="board-lists">
+                        <div class="board-detail">
                             <div class="board-header">
-                                <div class="list-item list-number">번호</div>
-                                <div class="list-item list-subject">제목</div>
+                                <div class="list-item detail-subject">11월 19일(토) 고객센터 이전 안내</div>
+                                <div class="detail-info">
+                                    <div class="list-item">
+                                        <ul>
+                                            <li>
+                                                <span>작성자</span>
+                                                한국 벨킨
+                                            </li>
+                                            <li>
+                                                <span>작성일</span>
+                                                2022-11-03
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item">
+                                        <ul>
+                                            <li>
+                                                <span>첨부파일</span>
+                                                <a href="">한 쪽만 페어링 되는 경우 조치 사항.jpg</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="board-body">
-                                <!-- 반복문 아이템 -->
-                                <!-- <div class="board-item">
-                                    <div class="list-item list-number">10</div>
-                                    <div class="list-item list-subject">
-                                        <a href="#">
-                                            제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 제목을 입력해주세요. 
-                                        </a>
-                                    </div>
-                                </div> -->
-                                <!-- // 반복문 아이템 -->
-                                <!-- 조회된 데이터 없을 경우 -->
-                                <div class="board-item no-data">아직 등록된 글이 없어요.</div>
-                                <!-- // 조회된 데이터 없을 경우 -->
+                                <div id="ContentPlaceHolder1_pnlList">한국벨킨 고객센터에서 보다 나은 서비스를 위해
+                                11월 19일(토)에 고객센터 이전작업을 진행합니다.
+
+                                A/S를 접수하시는 고객 여러분 께서는
+                                A/S 접수 후 이메일로 발송해 드리는 '제품 교환 신청 안내문'에
+                                '택배 발송 일정에 따른 배송지 주소'가 고지되어 있으니 참고하여 주시기 바랍니다.
+                                (접수 상품별 A/S 방식 및 주소지가 상이하여, 개별적으로 보내드리는 내용 참고해 주시면 됩니다.)
+
+                                고객센터 이전 주간에는 전화, 채팅, 이메일 상담 및
+                                A/S 처리가 다소 지연질 수 있음을 양해 부탁드립니다. 감사합니다.
+                                </div>
                             </div>
                         </div>
-                        <div class="pagination">
-                            <button type="button" name="ctl00$ContentPlaceHolder1$lbtnFirst" id="ContentPlaceHolder1_lbtnFirst" class="pagination-first">
-                                <span class="a11y-text">처음 페이지</span>
-                            </button>
-                            <button type="button" name="ctl00$ContentPlaceHolder1$lbtnPrevious" id="ContentPlaceHolder1_lbtnPrevious"  class="pagination-prev">
-                                <span class="a11y-text">이전 페이지</span>
-                            </button>
-                            <button type="button" class="is-active">1</button>
-                            <button type="button">2</button>
-                            <button type="button">3</button>
-                            <button type="button">4</button>
-                            <button type="button">5</button>
-                            <button type="button" name="ctl00$ContentPlaceHolder1$lbtnNext" id="ContentPlaceHolder1_lbtnNext"  class="pagination-next">
-                                <span class="a11y-text">다음 페이지</span>
-                            </button>
-                            <button type="button" name="ctl00$ContentPlaceHolder1$lbtnLast" id="ContentPlaceHolder1_lbtnLast"  class="pagination-last">
-                                <span class="a11y-text">마지막 페이지</span>
-                            </button>
+                        <div class="pagination type-detail">
+                            <div>
+                                <button type="button" name="ctl00$ContentPlaceHolder1$btnList" id="ContentPlaceHolder1_btnList" class="pagination-board-list">
+                                    <span class="a11y-text">목록</span>
+                                </button>
+                            </div>
+                            <div>
+                                <button type="button" name="ctl00$ContentPlaceHolder1$btnPre" id="ContentPlaceHolder1_btnPre" class="pagination-board-prev" onclick="return checkButton('Pre');">
+                                    <span class="a11y-text">이전 글</span>
+                                </button>
+                                <button type="button" name="ctl00$ContentPlaceHolder1$btnNext" id="ContentPlaceHolder1_btnNext" class="pagination-board-next" onclick="return checkButton('Next');">
+                                    <span class="a11y-text">다음 글</span>
+                                </button>
+                            </div>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdPre" id="ContentPlaceHolder1_hdPre" value="20220617103943733001">
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdNext" id="ContentPlaceHolder1_hdNext">
                         </div>
                     </section>
                 </div>
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdMenuName" id="ContentPlaceHolder1_hdMenuName" value="자주 묻는 질문">
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdSubMenuName" id="ContentPlaceHolder1_hdSubMenuName" value="온라인 AS 관련">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdBoardiD" id="ContentPlaceHolder1_hdBoardiD" value="WebCSNew">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdContentsNo" id="ContentPlaceHolder1_hdContentsNo" value="20221103140305087001">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdMenuName" id="ContentPlaceHolder1_hdMenuName" value="공지사항">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdSubMenuName" id="ContentPlaceHolder1_hdSubMenuName" value="공지사항">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdListPage" id="ContentPlaceHolder1_hdListPage" value="BoardList">
                 <input type="hidden" name="ctl00$ContentPlaceHolder1$hdSubPage" id="ContentPlaceHolder1_hdSubPage" value="BoardView5">
             </div>
         </div>

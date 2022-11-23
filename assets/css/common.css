@@ -890,6 +890,22 @@
   font-size: 0;
   margin-top: 60px;
 }
+.pagination.type-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media only screen and (max-width: 520px) {
+  .pagination.type-detail {
+    margin-top: 24px;
+  }
+}
 .pagination button {
   width: 48px;
   height: 48px;
@@ -941,6 +957,16 @@
 }
 .pagination button.pagination-last {
   background-image: url("../images/icon_pagination_last.png");
+}
+.pagination button.pagination-board-prev {
+  background-image: url("../images/icon_prev.png");
+}
+.pagination button.pagination-board-next {
+  background-image: url("../images/icon_next.png");
+}
+.pagination button.pagination-board-list {
+  background-color: #000;
+  background-image: url("../images/icon_list.png");
 }
 
 .process-waiting {
