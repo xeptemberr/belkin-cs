@@ -67,22 +67,8 @@
                                 <div class="detail-info">
                                     <div class="list-item">
                                         <ul>
-                                            <li>
-                                                <span>작성자</span>
-                                                한국 벨킨
-                                            </li>
-                                            <li>
-                                                <span>작성일</span>
-                                                2022-11-03
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="list-item">
-                                        <ul>
-                                            <li>
-                                                <span>첨부파일</span>
-                                                <a href="">한 쪽만 페어링 되는 경우 조치 사항.jpg</a>
-                                            </li>
+                                            <li class="item-writer">한국 벨킨</li>
+                                            <li class="item-date">2022.11.03</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -100,23 +86,25 @@
                                 A/S 처리가 다소 지연질 수 있음을 양해 부탁드립니다. 감사합니다.
                                 </div>
                             </div>
+                            <div class="board-footer">
+                                <strong>
+                                    <img src="assets/images/icon_file.png" alt=""> 
+                                    <span>첨부파일</span>
+                                </strong>
+                                <a href="#">한 쪽만 페어링 되는 경우 조치 사항.jpg</a>
+                            </div>
                         </div>
-                        <div class="pagination type-detail">
+                        <div class="board-detail-controls">
                             <div>
-                                <button type="button" name="ctl00$ContentPlaceHolder1$btnList" id="ContentPlaceHolder1_btnList" class="pagination-board-list">
-                                    <span class="a11y-text">목록</span>
-                                </button>
+                                <button type="button" name="ctl00$ContentPlaceHolder1$btnList" id="ContentPlaceHolder1_btnList" class="button-belkin-outline">목록</button>
                             </div>
                             <div>
-                                <button type="button" name="ctl00$ContentPlaceHolder1$btnPre" id="ContentPlaceHolder1_btnPre" class="pagination-board-prev" onclick="return checkButton('Pre');">
-                                    <span class="a11y-text">이전 글</span>
-                                </button>
-                                <button type="button" name="ctl00$ContentPlaceHolder1$btnNext" id="ContentPlaceHolder1_btnNext" class="pagination-board-next" onclick="return checkButton('Next');">
-                                    <span class="a11y-text">다음 글</span>
-                                </button>
+                                <button type="button" name="ctl00$ContentPlaceHolder1$btnPre" id="ContentPlaceHolder1_btnPre" class="button-black-outline" onclick="return checkButton('Pre');">이전</button>
+                                <button type="button" name="ctl00$ContentPlaceHolder1$btnNext" id="ContentPlaceHolder1_btnNext" class="button-black-outline" onclick="return checkButton('Next');">다음</button>
                             </div>
                             <input type="hidden" name="ctl00$ContentPlaceHolder1$hdPre" id="ContentPlaceHolder1_hdPre" value="20220617103943733001">
                             <input type="hidden" name="ctl00$ContentPlaceHolder1$hdNext" id="ContentPlaceHolder1_hdNext">
+                        </div>
                         </div>
                     </section>
                 </div>
@@ -165,6 +153,17 @@
                 </div>
             </div>
         </footer>
+        <div class="menu-floating">
+            <button type="button" class="button-as">
+                <span class="a11y-text">AS접수</span>
+            </button>
+            <button type="button" class="button-order">
+                <span class="a11y-text">정품등록</span>
+            </button>
+            <button type="button" class="button-chatbot" name="ctl00$btnChatting" id="btnChatting">
+                <span class="a11y-text">채팅상담</span>
+            </button>
+        </div>
     </div>
 </body>
 </html>

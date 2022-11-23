@@ -642,12 +642,13 @@
         }
     }
     .board-detail {
+        border-bottom: 1px solid #ebebeb;
         .board-header {
-            border-top: 1px solid $color-belkin;
+            border-top: 1px solid #ebebeb;
             border-bottom: 1px solid #ebebeb;
             padding: 40px 0;
             .detail-subject {
-                font-size: 20px;
+                font-size: 28px;
                 font-weight: bold;
                 line-height: 1.4;
                 @include tablet-max {
@@ -663,49 +664,17 @@
         }
         .detail-info {
             font-weight: normal;
-            font-size: 16px;
-            margin-top: 32px;
-            .list-item {
-                & + .list-item {
-                    margin-top: 12px;
-                    @include mobile-max {
-                        margin-top: 8px;
-                    }
-                    a {
-                        text-decoration: underline;
-                    }
-                }
-            }
+            margin-top: 20px;
             @include tablet-max {
                 margin-top: 16px;
             }
             ul {
                 display: flex;
                 align-items: center;
-                justify-content: flex-start;
-                gap: 32px;
-                @include mobile-max {
-                    display: block;
-                }
-                li {
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    gap: 16px;
-                    @include mobile-max {
-                        gap: 0;
-                    }
-                    span {
-                        font-weight: bold;
-                        @include mobile-max {
-                            width: 80px;
-                        }
-                    }
-                    @include mobile-max {
-                        & + li {
-                            margin-top: 8px;
-                        }
-                    }
+                justify-content: space-between;
+                font-size: 20px;
+                .item-date {
+                    color: #878787;
                 }
             }
         }
@@ -713,9 +682,43 @@
             padding: 32px 0;
             white-space: pre-line;
             line-height: 1.6;
-            border-bottom: 1px solid $color-belkin;
+            font-size: 20px;
             @include tablet-max {
                 padding: 16px 0;
+            }
+        }
+        .board-footer {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 16px;
+            font-size: 20px;
+            padding: 40px 0;
+            border-top: 1px solid #ebebeb;
+            @include mobile-max {
+                padding: 24px 0;
+                gap: 8px;
+            }
+            strong {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 6px;
+                @include mobile-max {
+                    span {
+                        display: none;
+                    }
+                }
+                img {
+                    width: 24px;
+                    @include mobile-max {
+                        width: 16px;
+                    }
+                }
+            }
+            a {
+                color: #878787;
+                text-decoration: underline;
             }
         }
     }
@@ -827,7 +830,9 @@
 .prepare-lists {
     margin: 8px 0;
     .prepare-item {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
         margin-right: 16px;
         .number {
             display: inline-block;
@@ -840,7 +845,6 @@
             font-weight: bold;
             background: $color-belkin;
             border-radius: 100%;
-            margin-right: 8px;
         }
     }
 }

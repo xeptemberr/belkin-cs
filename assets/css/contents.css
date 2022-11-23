@@ -835,13 +835,16 @@
   text-align: center;
   display: block;
 }
+#contents .board-detail {
+  border-bottom: 1px solid #ebebeb;
+}
 #contents .board-detail .board-header {
-  border-top: 1px solid #76D850;
+  border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
   padding: 40px 0;
 }
 #contents .board-detail .board-header .detail-subject {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: bold;
   line-height: 1.4;
 }
@@ -862,19 +865,7 @@
 }
 #contents .board-detail .detail-info {
   font-weight: normal;
-  font-size: 16px;
-  margin-top: 32px;
-}
-#contents .board-detail .detail-info .list-item + .list-item {
-  margin-top: 12px;
-}
-@media only screen and (max-width: 520px) {
-  #contents .board-detail .detail-info .list-item + .list-item {
-    margin-top: 8px;
-  }
-}
-#contents .board-detail .detail-info .list-item + .list-item a {
-  text-decoration: underline;
+  margin-top: 20px;
 }
 @media only screen and (max-width: 1024px) {
   #contents .board-detail .detail-info {
@@ -888,17 +879,26 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 32px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
 }
-@media only screen and (max-width: 520px) {
-  #contents .board-detail .detail-info ul {
-    display: block;
+#contents .board-detail .detail-info ul .item-date {
+  color: #878787;
+}
+#contents .board-detail .board-body {
+  padding: 32px 0;
+  white-space: pre-line;
+  line-height: 1.6;
+  font-size: 20px;
+}
+@media only screen and (max-width: 1024px) {
+  #contents .board-detail .board-body {
+    padding: 16px 0;
   }
 }
-#contents .board-detail .detail-info ul li {
+#contents .board-detail .board-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -909,35 +909,44 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   gap: 16px;
+  font-size: 20px;
+  padding: 40px 0;
+  border-top: 1px solid #ebebeb;
 }
 @media only screen and (max-width: 520px) {
-  #contents .board-detail .detail-info ul li {
-    gap: 0;
+  #contents .board-detail .board-footer {
+    padding: 24px 0;
+    gap: 8px;
   }
 }
-#contents .board-detail .detail-info ul li span {
-  font-weight: bold;
+#contents .board-detail .board-footer strong {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 6px;
 }
 @media only screen and (max-width: 520px) {
-  #contents .board-detail .detail-info ul li span {
-    width: 80px;
+  #contents .board-detail .board-footer strong span {
+    display: none;
   }
+}
+#contents .board-detail .board-footer strong img {
+  width: 24px;
 }
 @media only screen and (max-width: 520px) {
-  #contents .board-detail .detail-info ul li + li {
-    margin-top: 8px;
+  #contents .board-detail .board-footer strong img {
+    width: 16px;
   }
 }
-#contents .board-detail .board-body {
-  padding: 32px 0;
-  white-space: pre-line;
-  line-height: 1.6;
-  border-bottom: 1px solid #76D850;
-}
-@media only screen and (max-width: 1024px) {
-  #contents .board-detail .board-body {
-    padding: 16px 0;
-  }
+#contents .board-detail .board-footer a {
+  color: #878787;
+  text-decoration: underline;
 }
 
 .search-container {
@@ -1093,7 +1102,13 @@
   margin: 8px 0;
 }
 .prepare-lists .prepare-item {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
   margin-right: 16px;
 }
 .prepare-lists .prepare-item .number {
@@ -1107,7 +1122,6 @@
   font-weight: bold;
   background: #76D850;
   border-radius: 100%;
-  margin-right: 8px;
 }
 
 .online-as-agree-section .agree-container {

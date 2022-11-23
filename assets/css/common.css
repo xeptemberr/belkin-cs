@@ -357,7 +357,7 @@
   color: #fff;
 }
 .button-belkin:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 @media only screen and (max-width: 800px) {
   .button-belkin {
@@ -399,7 +399,7 @@
   color: #fff;
 }
 .button-black:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 @media only screen and (max-width: 800px) {
   .button-black {
@@ -442,7 +442,7 @@
           box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 .button-white:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 @media only screen and (max-width: 800px) {
   .button-white {
@@ -488,7 +488,7 @@
   color: #76D850;
 }
 .button-belkin-outline:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 @media only screen and (max-width: 800px) {
   .button-belkin-outline {
@@ -532,7 +532,7 @@
   color: #000;
 }
 .button-black-outline:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 @media only screen and (max-width: 800px) {
   .button-black-outline {
@@ -577,7 +577,7 @@
   opacity: 0.8;
 }
 .button-white-outline:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 @media only screen and (max-width: 800px) {
   .button-white-outline {
@@ -890,22 +890,6 @@
   font-size: 0;
   margin-top: 60px;
 }
-.pagination.type-detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-@media only screen and (max-width: 520px) {
-  .pagination.type-detail {
-    margin-top: 24px;
-  }
-}
 .pagination button {
   width: 48px;
   height: 48px;
@@ -958,15 +942,33 @@
 .pagination button.pagination-last {
   background-image: url("../images/icon_pagination_last.png");
 }
-.pagination button.pagination-board-prev {
-  background-image: url("../images/icon_prev.png");
+
+.board-detail-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 32px;
 }
-.pagination button.pagination-board-next {
-  background-image: url("../images/icon_next.png");
+@media only screen and (max-width: 520px) {
+  .board-detail-controls {
+    margin-top: 24px;
+  }
 }
-.pagination button.pagination-board-list {
-  background-color: #000;
-  background-image: url("../images/icon_list.png");
+.board-detail-controls button {
+  padding: 0 16px;
+  min-width: 132px;
+}
+@media only screen and (max-width: 520px) {
+  .board-detail-controls button {
+    min-width: 80px;
+    padding: 0 8px;
+  }
 }
 
 .process-waiting {
