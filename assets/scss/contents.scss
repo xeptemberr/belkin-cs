@@ -198,16 +198,45 @@
             padding: 32px 0;
         }
         .img {
-            position: absolute;
-            right: 90px;
-            bottom: 28px;
-            @include desktop-min {
-                right: 40px;
-            }
+            text-align: center;
+            margin-top: 48px;
             @include tablet-min {
-                position: static;
-                text-align: center;
+                padding: 0 40px;
+            }
+            @include mobile-max {
+                padding: 0 20px;
                 margin-top: 24px;
+            }
+            @include tablet-max {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 12px;
+            }
+            @include mobile-max {
+                display: block;       
+            }
+            img {
+                display: inline-block;
+                vertical-align: top;
+                max-width: 100%;
+                max-height: 100%;
+                height: 158px;
+                @include mobile-max {
+                    height: auto;
+                    width: 70%;
+                }
+                & + img {
+                    margin-left: 120px;
+                    @include tablet-max {
+                        margin-left: 16px;
+                    }
+                    @include mobile-max {
+                        margin-left: 0;
+                    }
+                }
+            }
+            @include desktop-min {
             }
         }
         ul {
@@ -468,7 +497,7 @@
             }
             &.type-cant {
                 .img {
-                    width: 114px;
+                    width: 149px;
                 }
             }
         }
@@ -511,7 +540,7 @@
             align-items: center;
             justify-content: flex-start;
             text-align: center;
-            padding: 22px 0;
+            padding: 19px 0;
             @include mobile-max {
                 display: block;
                 text-align: left;
@@ -536,6 +565,7 @@
         }
         .list-item {
             padding: 0 8px;
+            line-height: 1.6;
             @include mobile-max {
                 padding: 0;
             }
@@ -582,7 +612,7 @@
                         content: '';
                         position: absolute;
                         right: -2px;
-                        top: 6px;
+                        top: 2px;
                         width: 1px;
                         height: 12px;
                         background: #000;
@@ -918,4 +948,10 @@
         display: block;
         margin-right: 8px;
     }
+}
+.tip-gray {
+    display: block;
+    font-size: initial;
+    color: #8B8B8B;
+    margin: 4px 0;
 }

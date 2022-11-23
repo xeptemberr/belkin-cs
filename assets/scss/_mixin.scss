@@ -396,13 +396,13 @@
             width: 100%;
             display: inline-block;
         }
-        &:not(:last-child) {
+        &.text {
             margin-right: 6px;
         }
         &:hover {
             background: rgba(0, 255, 42, 0.06);
             span {
-                &:first-child {
+                &.icon {
                     border-color: $color-belkin;
                 }
             }
@@ -411,7 +411,7 @@
             float: left;
             vertical-align: middle;
             transform: translate3d(0, 0, 0);
-            &:first-child {
+            &.icon {
                 position: relative;
                 width: 18px;
                 height: 18px;
@@ -420,6 +420,9 @@
                 border: 1px solid $color-belkin;
                 transition: all 0.2s ease;
                 box-shadow: 0 1px 1px rgba(0, 75, 0, 0.05);
+                & + .text {
+                    padding-left: 8px;
+                }
                 svg {
                     position: absolute;
                     top: 3px;
@@ -436,9 +439,11 @@
                     transform: translate3d(0, 0, 0);
                 }
             }
-            &:last-child {
-                padding-left: 8px;
+            &.text {
                 line-height: 18px;
+                & + .icon {
+                    margin-left: 8px;
+                }
                 @include mobile-max {
                     max-width: calc(100% - 20px);
                 }
@@ -449,7 +454,7 @@
         position: absolute;
         visibility: hidden;
         &:checked {
-            + .cbx span:first-child {
+            + .cbx span.icon {
                 background: $color-belkin;
                 border-color: $color-belkin;
                 animation: wave-4 0.4s ease;
